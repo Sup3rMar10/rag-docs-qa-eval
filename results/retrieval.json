@@ -1,0 +1,2794 @@
+{
+ "bm25@128": {
+  "method": "bm25",
+  "chunk_size": 128,
+  "n_chunks": 3682,
+  "n": 40,
+  "mrr@10": 0.32356150793650795,
+  "avg_ctx_words@5": 430.175,
+  "avg_latency_ms": 8.574402332305908,
+  "hit@1": 0.175,
+  "hit@3": 0.425,
+  "hit@5": 0.475,
+  "hit@10": 0.625,
+  "by_difficulty": {
+   "easy": {
+    "n": 12,
+    "hit@5": 0.5833333333333334
+   },
+   "medium": {
+    "n": 18,
+    "hit@5": 0.4444444444444444
+   },
+   "hard": {
+    "n": 10,
+    "hit@5": 0.4
+   }
+  },
+  "per_question": [
+   {
+    "id": "q001",
+    "difficulty": "hard",
+    "category": "security",
+    "rank": 1,
+    "ctx_words_at5": 440,
+    "latency_ms": 9.14764404296875
+   },
+   {
+    "id": "q002",
+    "difficulty": "hard",
+    "category": "troubleshooting",
+    "rank": null,
+    "ctx_words_at5": 492,
+    "latency_ms": 9.95779037475586
+   },
+   {
+    "id": "q003",
+    "difficulty": "medium",
+    "category": "scaling",
+    "rank": 2,
+    "ctx_words_at5": 471,
+    "latency_ms": 11.830329895019531
+   },
+   {
+    "id": "q004",
+    "difficulty": "medium",
+    "category": "ai/mcp",
+    "rank": null,
+    "ctx_words_at5": 388,
+    "latency_ms": 5.653142929077148
+   },
+   {
+    "id": "q005",
+    "difficulty": "easy",
+    "category": "observability/logging",
+    "rank": null,
+    "ctx_words_at5": 305,
+    "latency_ms": 7.85064697265625
+   },
+   {
+    "id": "q007",
+    "difficulty": "easy",
+    "category": "security",
+    "rank": 3,
+    "ctx_words_at5": 324,
+    "latency_ms": 6.263017654418945
+   },
+   {
+    "id": "q008",
+    "difficulty": "medium",
+    "category": "networking/ingress",
+    "rank": 7,
+    "ctx_words_at5": 358,
+    "latency_ms": 6.809234619140625
+   },
+   {
+    "id": "q009",
+    "difficulty": "hard",
+    "category": "billing/plans/quotas",
+    "rank": 1,
+    "ctx_words_at5": 281,
+    "latency_ms": 8.806705474853516
+   },
+   {
+    "id": "q010",
+    "difficulty": "hard",
+    "category": "networking/ingress",
+    "rank": 1,
+    "ctx_words_at5": 530,
+    "latency_ms": 12.799739837646484
+   },
+   {
+    "id": "q013",
+    "difficulty": "medium",
+    "category": "security",
+    "rank": null,
+    "ctx_words_at5": 403,
+    "latency_ms": 8.868217468261719
+   },
+   {
+    "id": "q014",
+    "difficulty": "easy",
+    "category": "jobs",
+    "rank": 1,
+    "ctx_words_at5": 383,
+    "latency_ms": 7.2784423828125
+   },
+   {
+    "id": "q015",
+    "difficulty": "easy",
+    "category": "billing/plans/quotas",
+    "rank": 9,
+    "ctx_words_at5": 511,
+    "latency_ms": 9.206533432006836
+   },
+   {
+    "id": "q016",
+    "difficulty": "medium",
+    "category": "GPU",
+    "rank": 2,
+    "ctx_words_at5": 334,
+    "latency_ms": 7.241010665893555
+   },
+   {
+    "id": "q017",
+    "difficulty": "medium",
+    "category": "troubleshooting",
+    "rank": 2,
+    "ctx_words_at5": 408,
+    "latency_ms": 8.03375244140625
+   },
+   {
+    "id": "q018",
+    "difficulty": "medium",
+    "category": "billing/plans/quotas",
+    "rank": null,
+    "ctx_words_at5": 565,
+    "latency_ms": 11.755704879760742
+   },
+   {
+    "id": "q020",
+    "difficulty": "medium",
+    "category": "jobs",
+    "rank": 1,
+    "ctx_words_at5": 502,
+    "latency_ms": 7.776498794555664
+   },
+   {
+    "id": "q021",
+    "difficulty": "medium",
+    "category": "GPU",
+    "rank": 4,
+    "ctx_words_at5": 471,
+    "latency_ms": 7.268428802490234
+   },
+   {
+    "id": "q023",
+    "difficulty": "medium",
+    "category": "networking/ingress",
+    "rank": 7,
+    "ctx_words_at5": 419,
+    "latency_ms": 6.787300109863281
+   },
+   {
+    "id": "q024",
+    "difficulty": "hard",
+    "category": "observability/logging",
+    "rank": null,
+    "ctx_words_at5": 527,
+    "latency_ms": 9.634971618652344
+   },
+   {
+    "id": "q025",
+    "difficulty": "medium",
+    "category": "networking/ingress",
+    "rank": 2,
+    "ctx_words_at5": 375,
+    "latency_ms": 8.589029312133789
+   },
+   {
+    "id": "q026",
+    "difficulty": "easy",
+    "category": "reliability/maintenance",
+    "rank": 2,
+    "ctx_words_at5": 521,
+    "latency_ms": 8.732318878173828
+   },
+   {
+    "id": "q027",
+    "difficulty": "hard",
+    "category": "networking/ingress",
+    "rank": 2,
+    "ctx_words_at5": 429,
+    "latency_ms": 9.31692123413086
+   },
+   {
+    "id": "q028",
+    "difficulty": "medium",
+    "category": "scaling",
+    "rank": null,
+    "ctx_words_at5": 315,
+    "latency_ms": 7.869720458984375
+   },
+   {
+    "id": "q029",
+    "difficulty": "hard",
+    "category": "billing/plans/quotas",
+    "rank": 8,
+    "ctx_words_at5": 403,
+    "latency_ms": 6.318092346191406
+   },
+   {
+    "id": "q030",
+    "difficulty": "easy",
+    "category": "jobs",
+    "rank": 7,
+    "ctx_words_at5": 576,
+    "latency_ms": 7.644414901733398
+   },
+   {
+    "id": "q032",
+    "difficulty": "medium",
+    "category": "security",
+    "rank": null,
+    "ctx_words_at5": 523,
+    "latency_ms": 8.141279220581055
+   },
+   {
+    "id": "q033",
+    "difficulty": "medium",
+    "category": "troubleshooting",
+    "rank": null,
+    "ctx_words_at5": 404,
+    "latency_ms": 9.820222854614258
+   },
+   {
+    "id": "q034",
+    "difficulty": "easy",
+    "category": "security",
+    "rank": 3,
+    "ctx_words_at5": 524,
+    "latency_ms": 5.715608596801758
+   },
+   {
+    "id": "q035",
+    "difficulty": "easy",
+    "category": "troubleshooting",
+    "rank": 4,
+    "ctx_words_at5": 310,
+    "latency_ms": 9.84954833984375
+   },
+   {
+    "id": "q036",
+    "difficulty": "medium",
+    "category": "networking/ingress",
+    "rank": null,
+    "ctx_words_at5": 395,
+    "latency_ms": 10.99085807800293
+   },
+   {
+    "id": "q037",
+    "difficulty": "hard",
+    "category": "billing/plans/quotas",
+    "rank": null,
+    "ctx_words_at5": 448,
+    "latency_ms": 4.742860794067383
+   },
+   {
+    "id": "q039",
+    "difficulty": "hard",
+    "category": "storage",
+    "rank": null,
+    "ctx_words_at5": 449,
+    "latency_ms": 7.255792617797852
+   },
+   {
+    "id": "q040",
+    "difficulty": "medium",
+    "category": "sessions",
+    "rank": 1,
+    "ctx_words_at5": 501,
+    "latency_ms": 10.054826736450195
+   },
+   {
+    "id": "q041",
+    "difficulty": "easy",
+    "category": "sessions",
+    "rank": null,
+    "ctx_words_at5": 233,
+    "latency_ms": 7.119655609130859
+   },
+   {
+    "id": "q042",
+    "difficulty": "hard",
+    "category": "scaling",
+    "rank": null,
+    "ctx_words_at5": 365,
+    "latency_ms": 9.914398193359375
+   },
+   {
+    "id": "q043",
+    "difficulty": "easy",
+    "category": "networking/ingress",
+    "rank": null,
+    "ctx_words_at5": 597,
+    "latency_ms": 8.725404739379883
+   },
+   {
+    "id": "q044",
+    "difficulty": "easy",
+    "category": "revisions/deployment",
+    "rank": 2,
+    "ctx_words_at5": 342,
+    "latency_ms": 10.818958282470703
+   },
+   {
+    "id": "q046",
+    "difficulty": "medium",
+    "category": "dapr",
+    "rank": 1,
+    "ctx_words_at5": 398,
+    "latency_ms": 13.20338249206543
+   },
+   {
+    "id": "q047",
+    "difficulty": "easy",
+    "category": "dapr",
+    "rank": 2,
+    "ctx_words_at5": 407,
+    "latency_ms": 5.131721496582031
+   },
+   {
+    "id": "q048",
+    "difficulty": "medium",
+    "category": "storage",
+    "rank": 9,
+    "ctx_words_at5": 580,
+    "latency_ms": 10.051965713500977
+   }
+  ]
+ },
+ "dense@128": {
+  "method": "dense",
+  "chunk_size": 128,
+  "n_chunks": 3682,
+  "n": 40,
+  "mrr@10": 0.6250892857142858,
+  "avg_ctx_words@5": 462.275,
+  "avg_latency_ms": 24.148118495941162,
+  "hit@1": 0.5,
+  "hit@3": 0.675,
+  "hit@5": 0.825,
+  "hit@10": 0.975,
+  "by_difficulty": {
+   "easy": {
+    "n": 12,
+    "hit@5": 0.9166666666666666
+   },
+   "medium": {
+    "n": 18,
+    "hit@5": 0.7777777777777778
+   },
+   "hard": {
+    "n": 10,
+    "hit@5": 0.8
+   }
+  },
+  "per_question": [
+   {
+    "id": "q001",
+    "difficulty": "hard",
+    "category": "security",
+    "rank": 1,
+    "ctx_words_at5": 473,
+    "latency_ms": 52.312374114990234
+   },
+   {
+    "id": "q002",
+    "difficulty": "hard",
+    "category": "troubleshooting",
+    "rank": 5,
+    "ctx_words_at5": 614,
+    "latency_ms": 23.955106735229492
+   },
+   {
+    "id": "q003",
+    "difficulty": "medium",
+    "category": "scaling",
+    "rank": 1,
+    "ctx_words_at5": 436,
+    "latency_ms": 24.541378021240234
+   },
+   {
+    "id": "q004",
+    "difficulty": "medium",
+    "category": "ai/mcp",
+    "rank": 7,
+    "ctx_words_at5": 455,
+    "latency_ms": 24.22046661376953
+   },
+   {
+    "id": "q005",
+    "difficulty": "easy",
+    "category": "observability/logging",
+    "rank": 1,
+    "ctx_words_at5": 448,
+    "latency_ms": 22.13764190673828
+   },
+   {
+    "id": "q007",
+    "difficulty": "easy",
+    "category": "security",
+    "rank": 1,
+    "ctx_words_at5": 337,
+    "latency_ms": 19.83499526977539
+   },
+   {
+    "id": "q008",
+    "difficulty": "medium",
+    "category": "networking/ingress",
+    "rank": null,
+    "ctx_words_at5": 501,
+    "latency_ms": 24.79267120361328
+   },
+   {
+    "id": "q009",
+    "difficulty": "hard",
+    "category": "billing/plans/quotas",
+    "rank": 1,
+    "ctx_words_at5": 431,
+    "latency_ms": 23.803234100341797
+   },
+   {
+    "id": "q010",
+    "difficulty": "hard",
+    "category": "networking/ingress",
+    "rank": 1,
+    "ctx_words_at5": 535,
+    "latency_ms": 27.773141860961914
+   },
+   {
+    "id": "q013",
+    "difficulty": "medium",
+    "category": "security",
+    "rank": 7,
+    "ctx_words_at5": 376,
+    "latency_ms": 22.719383239746094
+   },
+   {
+    "id": "q014",
+    "difficulty": "easy",
+    "category": "jobs",
+    "rank": 1,
+    "ctx_words_at5": 517,
+    "latency_ms": 24.432897567749023
+   },
+   {
+    "id": "q015",
+    "difficulty": "easy",
+    "category": "billing/plans/quotas",
+    "rank": 10,
+    "ctx_words_at5": 441,
+    "latency_ms": 25.676965713500977
+   },
+   {
+    "id": "q016",
+    "difficulty": "medium",
+    "category": "GPU",
+    "rank": 1,
+    "ctx_words_at5": 333,
+    "latency_ms": 24.025440216064453
+   },
+   {
+    "id": "q017",
+    "difficulty": "medium",
+    "category": "troubleshooting",
+    "rank": 1,
+    "ctx_words_at5": 472,
+    "latency_ms": 25.620460510253906
+   },
+   {
+    "id": "q018",
+    "difficulty": "medium",
+    "category": "billing/plans/quotas",
+    "rank": 1,
+    "ctx_words_at5": 477,
+    "latency_ms": 28.61928939819336
+   },
+   {
+    "id": "q020",
+    "difficulty": "medium",
+    "category": "jobs",
+    "rank": 1,
+    "ctx_words_at5": 516,
+    "latency_ms": 24.337053298950195
+   },
+   {
+    "id": "q021",
+    "difficulty": "medium",
+    "category": "GPU",
+    "rank": 3,
+    "ctx_words_at5": 444,
+    "latency_ms": 17.368078231811523
+   },
+   {
+    "id": "q023",
+    "difficulty": "medium",
+    "category": "networking/ingress",
+    "rank": 3,
+    "ctx_words_at5": 555,
+    "latency_ms": 21.242380142211914
+   },
+   {
+    "id": "q024",
+    "difficulty": "hard",
+    "category": "observability/logging",
+    "rank": 1,
+    "ctx_words_at5": 468,
+    "latency_ms": 23.22840690612793
+   },
+   {
+    "id": "q025",
+    "difficulty": "medium",
+    "category": "networking/ingress",
+    "rank": 6,
+    "ctx_words_at5": 450,
+    "latency_ms": 17.55070686340332
+   },
+   {
+    "id": "q026",
+    "difficulty": "easy",
+    "category": "reliability/maintenance",
+    "rank": 1,
+    "ctx_words_at5": 444,
+    "latency_ms": 23.101091384887695
+   },
+   {
+    "id": "q027",
+    "difficulty": "hard",
+    "category": "networking/ingress",
+    "rank": 2,
+    "ctx_words_at5": 410,
+    "latency_ms": 23.399829864501953
+   },
+   {
+    "id": "q028",
+    "difficulty": "medium",
+    "category": "scaling",
+    "rank": 4,
+    "ctx_words_at5": 523,
+    "latency_ms": 22.156238555908203
+   },
+   {
+    "id": "q029",
+    "difficulty": "hard",
+    "category": "billing/plans/quotas",
+    "rank": 1,
+    "ctx_words_at5": 370,
+    "latency_ms": 25.023937225341797
+   },
+   {
+    "id": "q030",
+    "difficulty": "easy",
+    "category": "jobs",
+    "rank": 2,
+    "ctx_words_at5": 456,
+    "latency_ms": 23.587942123413086
+   },
+   {
+    "id": "q032",
+    "difficulty": "medium",
+    "category": "security",
+    "rank": 5,
+    "ctx_words_at5": 603,
+    "latency_ms": 24.680376052856445
+   },
+   {
+    "id": "q033",
+    "difficulty": "medium",
+    "category": "troubleshooting",
+    "rank": 4,
+    "ctx_words_at5": 396,
+    "latency_ms": 24.565696716308594
+   },
+   {
+    "id": "q034",
+    "difficulty": "easy",
+    "category": "security",
+    "rank": 2,
+    "ctx_words_at5": 529,
+    "latency_ms": 24.5819091796875
+   },
+   {
+    "id": "q035",
+    "difficulty": "easy",
+    "category": "troubleshooting",
+    "rank": 1,
+    "ctx_words_at5": 390,
+    "latency_ms": 23.76270294189453
+   },
+   {
+    "id": "q036",
+    "difficulty": "medium",
+    "category": "networking/ingress",
+    "rank": 1,
+    "ctx_words_at5": 422,
+    "latency_ms": 21.582841873168945
+   },
+   {
+    "id": "q037",
+    "difficulty": "hard",
+    "category": "billing/plans/quotas",
+    "rank": 7,
+    "ctx_words_at5": 356,
+    "latency_ms": 19.17243003845215
+   },
+   {
+    "id": "q039",
+    "difficulty": "hard",
+    "category": "storage",
+    "rank": 8,
+    "ctx_words_at5": 469,
+    "latency_ms": 17.43149757385254
+   },
+   {
+    "id": "q040",
+    "difficulty": "medium",
+    "category": "sessions",
+    "rank": 3,
+    "ctx_words_at5": 518,
+    "latency_ms": 18.347978591918945
+   },
+   {
+    "id": "q041",
+    "difficulty": "easy",
+    "category": "sessions",
+    "rank": 1,
+    "ctx_words_at5": 517,
+    "latency_ms": 24.199247360229492
+   },
+   {
+    "id": "q042",
+    "difficulty": "hard",
+    "category": "scaling",
+    "rank": 3,
+    "ctx_words_at5": 435,
+    "latency_ms": 25.678157806396484
+   },
+   {
+    "id": "q043",
+    "difficulty": "easy",
+    "category": "networking/ingress",
+    "rank": 5,
+    "ctx_words_at5": 535,
+    "latency_ms": 23.19169044494629
+   },
+   {
+    "id": "q044",
+    "difficulty": "easy",
+    "category": "revisions/deployment",
+    "rank": 1,
+    "ctx_words_at5": 426,
+    "latency_ms": 25.05636215209961
+   },
+   {
+    "id": "q046",
+    "difficulty": "medium",
+    "category": "dapr",
+    "rank": 1,
+    "ctx_words_at5": 378,
+    "latency_ms": 30.635595321655273
+   },
+   {
+    "id": "q047",
+    "difficulty": "easy",
+    "category": "dapr",
+    "rank": 1,
+    "ctx_words_at5": 503,
+    "latency_ms": 23.24390411376953
+   },
+   {
+    "id": "q048",
+    "difficulty": "medium",
+    "category": "storage",
+    "rank": 4,
+    "ctx_words_at5": 532,
+    "latency_ms": 24.33323860168457
+   }
+  ]
+ },
+ "hybrid@128": {
+  "method": "hybrid",
+  "chunk_size": 128,
+  "n_chunks": 3682,
+  "n": 40,
+  "mrr@10": 0.46732142857142855,
+  "avg_ctx_words@5": 466.2,
+  "avg_latency_ms": 35.47349572181702,
+  "hit@1": 0.3,
+  "hit@3": 0.6,
+  "hit@5": 0.65,
+  "hit@10": 0.825,
+  "by_difficulty": {
+   "easy": {
+    "n": 12,
+    "hit@5": 0.9166666666666666
+   },
+   "medium": {
+    "n": 18,
+    "hit@5": 0.5
+   },
+   "hard": {
+    "n": 10,
+    "hit@5": 0.6
+   }
+  },
+  "per_question": [
+   {
+    "id": "q001",
+    "difficulty": "hard",
+    "category": "security",
+    "rank": 1,
+    "ctx_words_at5": 479,
+    "latency_ms": 31.789302825927734
+   },
+   {
+    "id": "q002",
+    "difficulty": "hard",
+    "category": "troubleshooting",
+    "rank": 8,
+    "ctx_words_at5": 594,
+    "latency_ms": 41.030168533325195
+   },
+   {
+    "id": "q003",
+    "difficulty": "medium",
+    "category": "scaling",
+    "rank": 2,
+    "ctx_words_at5": 424,
+    "latency_ms": 44.07143592834473
+   },
+   {
+    "id": "q004",
+    "difficulty": "medium",
+    "category": "ai/mcp",
+    "rank": 7,
+    "ctx_words_at5": 421,
+    "latency_ms": 29.867887496948242
+   },
+   {
+    "id": "q005",
+    "difficulty": "easy",
+    "category": "observability/logging",
+    "rank": 2,
+    "ctx_words_at5": 493,
+    "latency_ms": 31.766891479492188
+   },
+   {
+    "id": "q007",
+    "difficulty": "easy",
+    "category": "security",
+    "rank": 1,
+    "ctx_words_at5": 318,
+    "latency_ms": 28.766393661499023
+   },
+   {
+    "id": "q008",
+    "difficulty": "medium",
+    "category": "networking/ingress",
+    "rank": null,
+    "ctx_words_at5": 314,
+    "latency_ms": 37.85824775695801
+   },
+   {
+    "id": "q009",
+    "difficulty": "hard",
+    "category": "billing/plans/quotas",
+    "rank": 1,
+    "ctx_words_at5": 435,
+    "latency_ms": 36.90814971923828
+   },
+   {
+    "id": "q010",
+    "difficulty": "hard",
+    "category": "networking/ingress",
+    "rank": 1,
+    "ctx_words_at5": 555,
+    "latency_ms": 44.46673393249512
+   },
+   {
+    "id": "q013",
+    "difficulty": "medium",
+    "category": "security",
+    "rank": null,
+    "ctx_words_at5": 427,
+    "latency_ms": 37.66512870788574
+   },
+   {
+    "id": "q014",
+    "difficulty": "easy",
+    "category": "jobs",
+    "rank": 1,
+    "ctx_words_at5": 434,
+    "latency_ms": 27.364253997802734
+   },
+   {
+    "id": "q015",
+    "difficulty": "easy",
+    "category": "billing/plans/quotas",
+    "rank": 5,
+    "ctx_words_at5": 496,
+    "latency_ms": 31.879901885986328
+   },
+   {
+    "id": "q016",
+    "difficulty": "medium",
+    "category": "GPU",
+    "rank": 1,
+    "ctx_words_at5": 422,
+    "latency_ms": 33.350229263305664
+   },
+   {
+    "id": "q017",
+    "difficulty": "medium",
+    "category": "troubleshooting",
+    "rank": 1,
+    "ctx_words_at5": 376,
+    "latency_ms": 36.76724433898926
+   },
+   {
+    "id": "q018",
+    "difficulty": "medium",
+    "category": "billing/plans/quotas",
+    "rank": 10,
+    "ctx_words_at5": 546,
+    "latency_ms": 39.3671989440918
+   },
+   {
+    "id": "q020",
+    "difficulty": "medium",
+    "category": "jobs",
+    "rank": 1,
+    "ctx_words_at5": 564,
+    "latency_ms": 35.445451736450195
+   },
+   {
+    "id": "q021",
+    "difficulty": "medium",
+    "category": "GPU",
+    "rank": 2,
+    "ctx_words_at5": 493,
+    "latency_ms": 31.779766082763672
+   },
+   {
+    "id": "q023",
+    "difficulty": "medium",
+    "category": "networking/ingress",
+    "rank": 3,
+    "ctx_words_at5": 522,
+    "latency_ms": 30.200958251953125
+   },
+   {
+    "id": "q024",
+    "difficulty": "hard",
+    "category": "observability/logging",
+    "rank": null,
+    "ctx_words_at5": 488,
+    "latency_ms": 31.421184539794922
+   },
+   {
+    "id": "q025",
+    "difficulty": "medium",
+    "category": "networking/ingress",
+    "rank": 3,
+    "ctx_words_at5": 487,
+    "latency_ms": 36.397457122802734
+   },
+   {
+    "id": "q026",
+    "difficulty": "easy",
+    "category": "reliability/maintenance",
+    "rank": 1,
+    "ctx_words_at5": 495,
+    "latency_ms": 37.606000900268555
+   },
+   {
+    "id": "q027",
+    "difficulty": "hard",
+    "category": "networking/ingress",
+    "rank": 2,
+    "ctx_words_at5": 439,
+    "latency_ms": 34.03878211975098
+   },
+   {
+    "id": "q028",
+    "difficulty": "medium",
+    "category": "scaling",
+    "rank": null,
+    "ctx_words_at5": 486,
+    "latency_ms": 37.61482238769531
+   },
+   {
+    "id": "q029",
+    "difficulty": "hard",
+    "category": "billing/plans/quotas",
+    "rank": 2,
+    "ctx_words_at5": 425,
+    "latency_ms": 32.67788887023926
+   },
+   {
+    "id": "q030",
+    "difficulty": "easy",
+    "category": "jobs",
+    "rank": 3,
+    "ctx_words_at5": 532,
+    "latency_ms": 37.40096092224121
+   },
+   {
+    "id": "q032",
+    "difficulty": "medium",
+    "category": "security",
+    "rank": null,
+    "ctx_words_at5": 526,
+    "latency_ms": 40.58408737182617
+   },
+   {
+    "id": "q033",
+    "difficulty": "medium",
+    "category": "troubleshooting",
+    "rank": 8,
+    "ctx_words_at5": 404,
+    "latency_ms": 39.46423530578613
+   },
+   {
+    "id": "q034",
+    "difficulty": "easy",
+    "category": "security",
+    "rank": 2,
+    "ctx_words_at5": 594,
+    "latency_ms": 31.899452209472656
+   },
+   {
+    "id": "q035",
+    "difficulty": "easy",
+    "category": "troubleshooting",
+    "rank": 2,
+    "ctx_words_at5": 390,
+    "latency_ms": 34.24191474914551
+   },
+   {
+    "id": "q036",
+    "difficulty": "medium",
+    "category": "networking/ingress",
+    "rank": 8,
+    "ctx_words_at5": 395,
+    "latency_ms": 39.502859115600586
+   },
+   {
+    "id": "q037",
+    "difficulty": "hard",
+    "category": "billing/plans/quotas",
+    "rank": null,
+    "ctx_words_at5": 419,
+    "latency_ms": 30.939340591430664
+   },
+   {
+    "id": "q039",
+    "difficulty": "hard",
+    "category": "storage",
+    "rank": null,
+    "ctx_words_at5": 412,
+    "latency_ms": 33.69450569152832
+   },
+   {
+    "id": "q040",
+    "difficulty": "medium",
+    "category": "sessions",
+    "rank": 1,
+    "ctx_words_at5": 530,
+    "latency_ms": 30.627727508544922
+   },
+   {
+    "id": "q041",
+    "difficulty": "easy",
+    "category": "sessions",
+    "rank": 8,
+    "ctx_words_at5": 438,
+    "latency_ms": 33.30397605895996
+   },
+   {
+    "id": "q042",
+    "difficulty": "hard",
+    "category": "scaling",
+    "rank": 4,
+    "ctx_words_at5": 449,
+    "latency_ms": 41.48507118225098
+   },
+   {
+    "id": "q043",
+    "difficulty": "easy",
+    "category": "networking/ingress",
+    "rank": 3,
+    "ctx_words_at5": 568,
+    "latency_ms": 31.87274932861328
+   },
+   {
+    "id": "q044",
+    "difficulty": "easy",
+    "category": "revisions/deployment",
+    "rank": 1,
+    "ctx_words_at5": 446,
+    "latency_ms": 41.71323776245117
+   },
+   {
+    "id": "q046",
+    "difficulty": "medium",
+    "category": "dapr",
+    "rank": 1,
+    "ctx_words_at5": 398,
+    "latency_ms": 42.03009605407715
+   },
+   {
+    "id": "q047",
+    "difficulty": "easy",
+    "category": "dapr",
+    "rank": 2,
+    "ctx_words_at5": 437,
+    "latency_ms": 29.852867126464844
+   },
+   {
+    "id": "q048",
+    "difficulty": "medium",
+    "category": "storage",
+    "rank": 6,
+    "ctx_words_at5": 577,
+    "latency_ms": 40.22526741027832
+   }
+  ]
+ },
+ "hybrid+rerank@128": {
+  "method": "hybrid+rerank",
+  "chunk_size": 128,
+  "n_chunks": 3682,
+  "n": 40,
+  "mrr@10": 0.5542261904761905,
+  "avg_ctx_words@5": 472.325,
+  "avg_latency_ms": 987.009072303772,
+  "hit@1": 0.375,
+  "hit@3": 0.7,
+  "hit@5": 0.75,
+  "hit@10": 0.875,
+  "by_difficulty": {
+   "easy": {
+    "n": 12,
+    "hit@5": 0.9166666666666666
+   },
+   "medium": {
+    "n": 18,
+    "hit@5": 0.6666666666666666
+   },
+   "hard": {
+    "n": 10,
+    "hit@5": 0.7
+   }
+  },
+  "per_question": [
+   {
+    "id": "q001",
+    "difficulty": "hard",
+    "category": "security",
+    "rank": 1,
+    "ctx_words_at5": 448,
+    "latency_ms": 794.3334579467773
+   },
+   {
+    "id": "q002",
+    "difficulty": "hard",
+    "category": "troubleshooting",
+    "rank": 5,
+    "ctx_words_at5": 614,
+    "latency_ms": 801.518440246582
+   },
+   {
+    "id": "q003",
+    "difficulty": "medium",
+    "category": "scaling",
+    "rank": 1,
+    "ctx_words_at5": 439,
+    "latency_ms": 811.2688064575195
+   },
+   {
+    "id": "q004",
+    "difficulty": "medium",
+    "category": "ai/mcp",
+    "rank": 2,
+    "ctx_words_at5": 421,
+    "latency_ms": 1129.4364929199219
+   },
+   {
+    "id": "q005",
+    "difficulty": "easy",
+    "category": "observability/logging",
+    "rank": 1,
+    "ctx_words_at5": 555,
+    "latency_ms": 1237.7619743347168
+   },
+   {
+    "id": "q007",
+    "difficulty": "easy",
+    "category": "security",
+    "rank": 2,
+    "ctx_words_at5": 354,
+    "latency_ms": 799.736738204956
+   },
+   {
+    "id": "q008",
+    "difficulty": "medium",
+    "category": "networking/ingress",
+    "rank": null,
+    "ctx_words_at5": 356,
+    "latency_ms": 617.0816421508789
+   },
+   {
+    "id": "q009",
+    "difficulty": "hard",
+    "category": "billing/plans/quotas",
+    "rank": 1,
+    "ctx_words_at5": 461,
+    "latency_ms": 720.0062274932861
+   },
+   {
+    "id": "q010",
+    "difficulty": "hard",
+    "category": "networking/ingress",
+    "rank": 1,
+    "ctx_words_at5": 530,
+    "latency_ms": 844.7465896606445
+   },
+   {
+    "id": "q013",
+    "difficulty": "medium",
+    "category": "security",
+    "rank": null,
+    "ctx_words_at5": 494,
+    "latency_ms": 739.6965026855469
+   },
+   {
+    "id": "q014",
+    "difficulty": "easy",
+    "category": "jobs",
+    "rank": 3,
+    "ctx_words_at5": 461,
+    "latency_ms": 956.2115669250488
+   },
+   {
+    "id": "q015",
+    "difficulty": "easy",
+    "category": "billing/plans/quotas",
+    "rank": 3,
+    "ctx_words_at5": 496,
+    "latency_ms": 806.6990375518799
+   },
+   {
+    "id": "q016",
+    "difficulty": "medium",
+    "category": "GPU",
+    "rank": 1,
+    "ctx_words_at5": 362,
+    "latency_ms": 767.8122520446777
+   },
+   {
+    "id": "q017",
+    "difficulty": "medium",
+    "category": "troubleshooting",
+    "rank": 1,
+    "ctx_words_at5": 424,
+    "latency_ms": 839.2574787139893
+   },
+   {
+    "id": "q018",
+    "difficulty": "medium",
+    "category": "billing/plans/quotas",
+    "rank": null,
+    "ctx_words_at5": 553,
+    "latency_ms": 992.6776885986328
+   },
+   {
+    "id": "q020",
+    "difficulty": "medium",
+    "category": "jobs",
+    "rank": 1,
+    "ctx_words_at5": 564,
+    "latency_ms": 1035.7789993286133
+   },
+   {
+    "id": "q021",
+    "difficulty": "medium",
+    "category": "GPU",
+    "rank": 6,
+    "ctx_words_at5": 514,
+    "latency_ms": 781.5606594085693
+   },
+   {
+    "id": "q023",
+    "difficulty": "medium",
+    "category": "networking/ingress",
+    "rank": 3,
+    "ctx_words_at5": 578,
+    "latency_ms": 885.7192993164062
+   },
+   {
+    "id": "q024",
+    "difficulty": "hard",
+    "category": "observability/logging",
+    "rank": 2,
+    "ctx_words_at5": 500,
+    "latency_ms": 1664.952039718628
+   },
+   {
+    "id": "q025",
+    "difficulty": "medium",
+    "category": "networking/ingress",
+    "rank": 1,
+    "ctx_words_at5": 426,
+    "latency_ms": 1040.917158126831
+   },
+   {
+    "id": "q026",
+    "difficulty": "easy",
+    "category": "reliability/maintenance",
+    "rank": 1,
+    "ctx_words_at5": 574,
+    "latency_ms": 1184.1485500335693
+   },
+   {
+    "id": "q027",
+    "difficulty": "hard",
+    "category": "networking/ingress",
+    "rank": 1,
+    "ctx_words_at5": 370,
+    "latency_ms": 1153.0065536499023
+   },
+   {
+    "id": "q028",
+    "difficulty": "medium",
+    "category": "scaling",
+    "rank": 10,
+    "ctx_words_at5": 424,
+    "latency_ms": 1451.7817497253418
+   },
+   {
+    "id": "q029",
+    "difficulty": "hard",
+    "category": "billing/plans/quotas",
+    "rank": 4,
+    "ctx_words_at5": 403,
+    "latency_ms": 913.4867191314697
+   },
+   {
+    "id": "q030",
+    "difficulty": "easy",
+    "category": "jobs",
+    "rank": 2,
+    "ctx_words_at5": 504,
+    "latency_ms": 1007.8890323638916
+   },
+   {
+    "id": "q032",
+    "difficulty": "medium",
+    "category": "security",
+    "rank": null,
+    "ctx_words_at5": 472,
+    "latency_ms": 958.3783149719238
+   },
+   {
+    "id": "q033",
+    "difficulty": "medium",
+    "category": "troubleshooting",
+    "rank": 2,
+    "ctx_words_at5": 382,
+    "latency_ms": 914.867639541626
+   },
+   {
+    "id": "q034",
+    "difficulty": "easy",
+    "category": "security",
+    "rank": 2,
+    "ctx_words_at5": 578,
+    "latency_ms": 886.115312576294
+   },
+   {
+    "id": "q035",
+    "difficulty": "easy",
+    "category": "troubleshooting",
+    "rank": 1,
+    "ctx_words_at5": 441,
+    "latency_ms": 1031.430959701538
+   },
+   {
+    "id": "q036",
+    "difficulty": "medium",
+    "category": "networking/ingress",
+    "rank": 2,
+    "ctx_words_at5": 561,
+    "latency_ms": 1247.0488548278809
+   },
+   {
+    "id": "q037",
+    "difficulty": "hard",
+    "category": "billing/plans/quotas",
+    "rank": 7,
+    "ctx_words_at5": 425,
+    "latency_ms": 1011.4786624908447
+   },
+   {
+    "id": "q039",
+    "difficulty": "hard",
+    "category": "storage",
+    "rank": 6,
+    "ctx_words_at5": 449,
+    "latency_ms": 819.8919296264648
+   },
+   {
+    "id": "q040",
+    "difficulty": "medium",
+    "category": "sessions",
+    "rank": 1,
+    "ctx_words_at5": 522,
+    "latency_ms": 953.479528427124
+   },
+   {
+    "id": "q041",
+    "difficulty": "easy",
+    "category": "sessions",
+    "rank": 2,
+    "ctx_words_at5": 422,
+    "latency_ms": 1130.9928894042969
+   },
+   {
+    "id": "q042",
+    "difficulty": "hard",
+    "category": "scaling",
+    "rank": null,
+    "ctx_words_at5": 452,
+    "latency_ms": 1316.3270950317383
+   },
+   {
+    "id": "q043",
+    "difficulty": "easy",
+    "category": "networking/ingress",
+    "rank": 2,
+    "ctx_words_at5": 474,
+    "latency_ms": 884.5880031585693
+   },
+   {
+    "id": "q044",
+    "difficulty": "easy",
+    "category": "revisions/deployment",
+    "rank": 1,
+    "ctx_words_at5": 461,
+    "latency_ms": 791.4988994598389
+   },
+   {
+    "id": "q046",
+    "difficulty": "medium",
+    "category": "dapr",
+    "rank": 1,
+    "ctx_words_at5": 430,
+    "latency_ms": 989.2604351043701
+   },
+   {
+    "id": "q047",
+    "difficulty": "easy",
+    "category": "dapr",
+    "rank": 7,
+    "ctx_words_at5": 426,
+    "latency_ms": 1258.528709411621
+   },
+   {
+    "id": "q048",
+    "difficulty": "medium",
+    "category": "storage",
+    "rank": 2,
+    "ctx_words_at5": 573,
+    "latency_ms": 1308.9900016784668
+   }
+  ]
+ },
+ "bm25@256": {
+  "method": "bm25",
+  "chunk_size": 256,
+  "n_chunks": 2780,
+  "n": 40,
+  "mrr@10": 0.39557539682539683,
+  "avg_ctx_words@5": 663.3,
+  "avg_latency_ms": 18.377578258514404,
+  "hit@1": 0.275,
+  "hit@3": 0.5,
+  "hit@5": 0.55,
+  "hit@10": 0.675,
+  "by_difficulty": {
+   "easy": {
+    "n": 12,
+    "hit@5": 0.6666666666666666
+   },
+   "medium": {
+    "n": 18,
+    "hit@5": 0.5555555555555556
+   },
+   "hard": {
+    "n": 10,
+    "hit@5": 0.4
+   }
+  },
+  "per_question": [
+   {
+    "id": "q001",
+    "difficulty": "hard",
+    "category": "security",
+    "rank": 1,
+    "ctx_words_at5": 906,
+    "latency_ms": 23.38433265686035
+   },
+   {
+    "id": "q002",
+    "difficulty": "hard",
+    "category": "troubleshooting",
+    "rank": 9,
+    "ctx_words_at5": 606,
+    "latency_ms": 23.401975631713867
+   },
+   {
+    "id": "q003",
+    "difficulty": "medium",
+    "category": "scaling",
+    "rank": 3,
+    "ctx_words_at5": 843,
+    "latency_ms": 24.121761322021484
+   },
+   {
+    "id": "q004",
+    "difficulty": "medium",
+    "category": "ai/mcp",
+    "rank": 7,
+    "ctx_words_at5": 693,
+    "latency_ms": 13.946533203125
+   },
+   {
+    "id": "q005",
+    "difficulty": "easy",
+    "category": "observability/logging",
+    "rank": null,
+    "ctx_words_at5": 395,
+    "latency_ms": 18.074512481689453
+   },
+   {
+    "id": "q007",
+    "difficulty": "easy",
+    "category": "security",
+    "rank": 5,
+    "ctx_words_at5": 601,
+    "latency_ms": 13.85807991027832
+   },
+   {
+    "id": "q008",
+    "difficulty": "medium",
+    "category": "networking/ingress",
+    "rank": 7,
+    "ctx_words_at5": 479,
+    "latency_ms": 14.998674392700195
+   },
+   {
+    "id": "q009",
+    "difficulty": "hard",
+    "category": "billing/plans/quotas",
+    "rank": 1,
+    "ctx_words_at5": 607,
+    "latency_ms": 18.500328063964844
+   },
+   {
+    "id": "q010",
+    "difficulty": "hard",
+    "category": "networking/ingress",
+    "rank": 1,
+    "ctx_words_at5": 733,
+    "latency_ms": 26.25584602355957
+   },
+   {
+    "id": "q013",
+    "difficulty": "medium",
+    "category": "security",
+    "rank": null,
+    "ctx_words_at5": 607,
+    "latency_ms": 19.57416534423828
+   },
+   {
+    "id": "q014",
+    "difficulty": "easy",
+    "category": "jobs",
+    "rank": 1,
+    "ctx_words_at5": 383,
+    "latency_ms": 17.806053161621094
+   },
+   {
+    "id": "q015",
+    "difficulty": "easy",
+    "category": "billing/plans/quotas",
+    "rank": 7,
+    "ctx_words_at5": 622,
+    "latency_ms": 19.448041915893555
+   },
+   {
+    "id": "q016",
+    "difficulty": "medium",
+    "category": "GPU",
+    "rank": 2,
+    "ctx_words_at5": 379,
+    "latency_ms": 17.349958419799805
+   },
+   {
+    "id": "q017",
+    "difficulty": "medium",
+    "category": "troubleshooting",
+    "rank": 2,
+    "ctx_words_at5": 922,
+    "latency_ms": 18.814802169799805
+   },
+   {
+    "id": "q018",
+    "difficulty": "medium",
+    "category": "billing/plans/quotas",
+    "rank": null,
+    "ctx_words_at5": 821,
+    "latency_ms": 29.112815856933594
+   },
+   {
+    "id": "q020",
+    "difficulty": "medium",
+    "category": "jobs",
+    "rank": 1,
+    "ctx_words_at5": 633,
+    "latency_ms": 18.972158432006836
+   },
+   {
+    "id": "q021",
+    "difficulty": "medium",
+    "category": "GPU",
+    "rank": 3,
+    "ctx_words_at5": 818,
+    "latency_ms": 14.490365982055664
+   },
+   {
+    "id": "q023",
+    "difficulty": "medium",
+    "category": "networking/ingress",
+    "rank": 3,
+    "ctx_words_at5": 848,
+    "latency_ms": 9.308815002441406
+   },
+   {
+    "id": "q024",
+    "difficulty": "hard",
+    "category": "observability/logging",
+    "rank": null,
+    "ctx_words_at5": 733,
+    "latency_ms": 19.404172897338867
+   },
+   {
+    "id": "q025",
+    "difficulty": "medium",
+    "category": "networking/ingress",
+    "rank": 1,
+    "ctx_words_at5": 624,
+    "latency_ms": 17.80533790588379
+   },
+   {
+    "id": "q026",
+    "difficulty": "easy",
+    "category": "reliability/maintenance",
+    "rank": 2,
+    "ctx_words_at5": 626,
+    "latency_ms": 17.1811580657959
+   },
+   {
+    "id": "q027",
+    "difficulty": "hard",
+    "category": "networking/ingress",
+    "rank": 1,
+    "ctx_words_at5": 882,
+    "latency_ms": 18.05281639099121
+   },
+   {
+    "id": "q028",
+    "difficulty": "medium",
+    "category": "scaling",
+    "rank": null,
+    "ctx_words_at5": 453,
+    "latency_ms": 16.735553741455078
+   },
+   {
+    "id": "q029",
+    "difficulty": "hard",
+    "category": "billing/plans/quotas",
+    "rank": 6,
+    "ctx_words_at5": 514,
+    "latency_ms": 11.45625114440918
+   },
+   {
+    "id": "q030",
+    "difficulty": "easy",
+    "category": "jobs",
+    "rank": 2,
+    "ctx_words_at5": 745,
+    "latency_ms": 13.738632202148438
+   },
+   {
+    "id": "q032",
+    "difficulty": "medium",
+    "category": "security",
+    "rank": null,
+    "ctx_words_at5": 500,
+    "latency_ms": 19.02031898498535
+   },
+   {
+    "id": "q033",
+    "difficulty": "medium",
+    "category": "troubleshooting",
+    "rank": null,
+    "ctx_words_at5": 511,
+    "latency_ms": 19.605398178100586
+   },
+   {
+    "id": "q034",
+    "difficulty": "easy",
+    "category": "security",
+    "rank": 3,
+    "ctx_words_at5": 704,
+    "latency_ms": 12.170076370239258
+   },
+   {
+    "id": "q035",
+    "difficulty": "easy",
+    "category": "troubleshooting",
+    "rank": 1,
+    "ctx_words_at5": 660,
+    "latency_ms": 19.97995376586914
+   },
+   {
+    "id": "q036",
+    "difficulty": "medium",
+    "category": "networking/ingress",
+    "rank": null,
+    "ctx_words_at5": 492,
+    "latency_ms": 21.51632308959961
+   },
+   {
+    "id": "q037",
+    "difficulty": "hard",
+    "category": "billing/plans/quotas",
+    "rank": null,
+    "ctx_words_at5": 669,
+    "latency_ms": 10.859966278076172
+   },
+   {
+    "id": "q039",
+    "difficulty": "hard",
+    "category": "storage",
+    "rank": null,
+    "ctx_words_at5": 644,
+    "latency_ms": 17.490386962890625
+   },
+   {
+    "id": "q040",
+    "difficulty": "medium",
+    "category": "sessions",
+    "rank": 1,
+    "ctx_words_at5": 993,
+    "latency_ms": 16.99662208557129
+   },
+   {
+    "id": "q041",
+    "difficulty": "easy",
+    "category": "sessions",
+    "rank": null,
+    "ctx_words_at5": 420,
+    "latency_ms": 14.818668365478516
+   },
+   {
+    "id": "q042",
+    "difficulty": "hard",
+    "category": "scaling",
+    "rank": null,
+    "ctx_words_at5": 658,
+    "latency_ms": 19.29020881652832
+   },
+   {
+    "id": "q043",
+    "difficulty": "easy",
+    "category": "networking/ingress",
+    "rank": null,
+    "ctx_words_at5": 791,
+    "latency_ms": 17.179012298583984
+   },
+   {
+    "id": "q044",
+    "difficulty": "easy",
+    "category": "revisions/deployment",
+    "rank": 1,
+    "ctx_words_at5": 562,
+    "latency_ms": 23.731231689453125
+   },
+   {
+    "id": "q046",
+    "difficulty": "medium",
+    "category": "dapr",
+    "rank": 1,
+    "ctx_words_at5": 635,
+    "latency_ms": 24.803876876831055
+   },
+   {
+    "id": "q047",
+    "difficulty": "easy",
+    "category": "dapr",
+    "rank": 3,
+    "ctx_words_at5": 726,
+    "latency_ms": 13.106346130371094
+   },
+   {
+    "id": "q048",
+    "difficulty": "medium",
+    "category": "storage",
+    "rank": 4,
+    "ctx_words_at5": 1094,
+    "latency_ms": 28.74159812927246
+   }
+  ]
+ },
+ "dense@256": {
+  "method": "dense",
+  "chunk_size": 256,
+  "n_chunks": 2780,
+  "n": 40,
+  "mrr@10": 0.651140873015873,
+  "avg_ctx_words@5": 637.175,
+  "avg_latency_ms": 78.1466007232666,
+  "hit@1": 0.5,
+  "hit@3": 0.725,
+  "hit@5": 0.85,
+  "hit@10": 0.975,
+  "by_difficulty": {
+   "easy": {
+    "n": 12,
+    "hit@5": 0.9166666666666666
+   },
+   "medium": {
+    "n": 18,
+    "hit@5": 0.8333333333333334
+   },
+   "hard": {
+    "n": 10,
+    "hit@5": 0.8
+   }
+  },
+  "per_question": [
+   {
+    "id": "q001",
+    "difficulty": "hard",
+    "category": "security",
+    "rank": 1,
+    "ctx_words_at5": 880,
+    "latency_ms": 76.29942893981934
+   },
+   {
+    "id": "q002",
+    "difficulty": "hard",
+    "category": "troubleshooting",
+    "rank": 1,
+    "ctx_words_at5": 898,
+    "latency_ms": 68.72344017028809
+   },
+   {
+    "id": "q003",
+    "difficulty": "medium",
+    "category": "scaling",
+    "rank": 2,
+    "ctx_words_at5": 880,
+    "latency_ms": 79.05864715576172
+   },
+   {
+    "id": "q004",
+    "difficulty": "medium",
+    "category": "ai/mcp",
+    "rank": 4,
+    "ctx_words_at5": 529,
+    "latency_ms": 68.09568405151367
+   },
+   {
+    "id": "q005",
+    "difficulty": "easy",
+    "category": "observability/logging",
+    "rank": 1,
+    "ctx_words_at5": 1000,
+    "latency_ms": 67.95263290405273
+   },
+   {
+    "id": "q007",
+    "difficulty": "easy",
+    "category": "security",
+    "rank": 1,
+    "ctx_words_at5": 452,
+    "latency_ms": 68.74275207519531
+   },
+   {
+    "id": "q008",
+    "difficulty": "medium",
+    "category": "networking/ingress",
+    "rank": null,
+    "ctx_words_at5": 597,
+    "latency_ms": 79.925537109375
+   },
+   {
+    "id": "q009",
+    "difficulty": "hard",
+    "category": "billing/plans/quotas",
+    "rank": 1,
+    "ctx_words_at5": 719,
+    "latency_ms": 70.3432559967041
+   },
+   {
+    "id": "q010",
+    "difficulty": "hard",
+    "category": "networking/ingress",
+    "rank": 1,
+    "ctx_words_at5": 664,
+    "latency_ms": 161.70406341552734
+   },
+   {
+    "id": "q013",
+    "difficulty": "medium",
+    "category": "security",
+    "rank": 7,
+    "ctx_words_at5": 465,
+    "latency_ms": 77.6052474975586
+   },
+   {
+    "id": "q014",
+    "difficulty": "easy",
+    "category": "jobs",
+    "rank": 1,
+    "ctx_words_at5": 617,
+    "latency_ms": 78.9937973022461
+   },
+   {
+    "id": "q015",
+    "difficulty": "easy",
+    "category": "billing/plans/quotas",
+    "rank": 9,
+    "ctx_words_at5": 525,
+    "latency_ms": 80.0161361694336
+   },
+   {
+    "id": "q016",
+    "difficulty": "medium",
+    "category": "GPU",
+    "rank": 1,
+    "ctx_words_at5": 417,
+    "latency_ms": 86.51924133300781
+   },
+   {
+    "id": "q017",
+    "difficulty": "medium",
+    "category": "troubleshooting",
+    "rank": 1,
+    "ctx_words_at5": 578,
+    "latency_ms": 78.31978797912598
+   },
+   {
+    "id": "q018",
+    "difficulty": "medium",
+    "category": "billing/plans/quotas",
+    "rank": 1,
+    "ctx_words_at5": 591,
+    "latency_ms": 81.58540725708008
+   },
+   {
+    "id": "q020",
+    "difficulty": "medium",
+    "category": "jobs",
+    "rank": 1,
+    "ctx_words_at5": 837,
+    "latency_ms": 75.26135444641113
+   },
+   {
+    "id": "q021",
+    "difficulty": "medium",
+    "category": "GPU",
+    "rank": 8,
+    "ctx_words_at5": 588,
+    "latency_ms": 69.48471069335938
+   },
+   {
+    "id": "q023",
+    "difficulty": "medium",
+    "category": "networking/ingress",
+    "rank": 2,
+    "ctx_words_at5": 703,
+    "latency_ms": 72.11041450500488
+   },
+   {
+    "id": "q024",
+    "difficulty": "hard",
+    "category": "observability/logging",
+    "rank": 2,
+    "ctx_words_at5": 700,
+    "latency_ms": 71.27666473388672
+   },
+   {
+    "id": "q025",
+    "difficulty": "medium",
+    "category": "networking/ingress",
+    "rank": 1,
+    "ctx_words_at5": 660,
+    "latency_ms": 71.2120532989502
+   },
+   {
+    "id": "q026",
+    "difficulty": "easy",
+    "category": "reliability/maintenance",
+    "rank": 1,
+    "ctx_words_at5": 483,
+    "latency_ms": 70.61243057250977
+   },
+   {
+    "id": "q027",
+    "difficulty": "hard",
+    "category": "networking/ingress",
+    "rank": 1,
+    "ctx_words_at5": 737,
+    "latency_ms": 69.82898712158203
+   },
+   {
+    "id": "q028",
+    "difficulty": "medium",
+    "category": "scaling",
+    "rank": 4,
+    "ctx_words_at5": 556,
+    "latency_ms": 79.54025268554688
+   },
+   {
+    "id": "q029",
+    "difficulty": "hard",
+    "category": "billing/plans/quotas",
+    "rank": 1,
+    "ctx_words_at5": 560,
+    "latency_ms": 146.45957946777344
+   },
+   {
+    "id": "q030",
+    "difficulty": "easy",
+    "category": "jobs",
+    "rank": 1,
+    "ctx_words_at5": 443,
+    "latency_ms": 63.568830490112305
+   },
+   {
+    "id": "q032",
+    "difficulty": "medium",
+    "category": "security",
+    "rank": 2,
+    "ctx_words_at5": 557,
+    "latency_ms": 76.02095603942871
+   },
+   {
+    "id": "q033",
+    "difficulty": "medium",
+    "category": "troubleshooting",
+    "rank": 4,
+    "ctx_words_at5": 513,
+    "latency_ms": 71.6254711151123
+   },
+   {
+    "id": "q034",
+    "difficulty": "easy",
+    "category": "security",
+    "rank": 2,
+    "ctx_words_at5": 568,
+    "latency_ms": 72.17907905578613
+   },
+   {
+    "id": "q035",
+    "difficulty": "easy",
+    "category": "troubleshooting",
+    "rank": 1,
+    "ctx_words_at5": 474,
+    "latency_ms": 66.97654724121094
+   },
+   {
+    "id": "q036",
+    "difficulty": "medium",
+    "category": "networking/ingress",
+    "rank": 1,
+    "ctx_words_at5": 531,
+    "latency_ms": 76.17831230163574
+   },
+   {
+    "id": "q037",
+    "difficulty": "hard",
+    "category": "billing/plans/quotas",
+    "rank": 8,
+    "ctx_words_at5": 356,
+    "latency_ms": 72.59273529052734
+   },
+   {
+    "id": "q039",
+    "difficulty": "hard",
+    "category": "storage",
+    "rank": 8,
+    "ctx_words_at5": 716,
+    "latency_ms": 72.34644889831543
+   },
+   {
+    "id": "q040",
+    "difficulty": "medium",
+    "category": "sessions",
+    "rank": 3,
+    "ctx_words_at5": 667,
+    "latency_ms": 76.21359825134277
+   },
+   {
+    "id": "q041",
+    "difficulty": "easy",
+    "category": "sessions",
+    "rank": 2,
+    "ctx_words_at5": 694,
+    "latency_ms": 73.78959655761719
+   },
+   {
+    "id": "q042",
+    "difficulty": "hard",
+    "category": "scaling",
+    "rank": 2,
+    "ctx_words_at5": 637,
+    "latency_ms": 73.74191284179688
+   },
+   {
+    "id": "q043",
+    "difficulty": "easy",
+    "category": "networking/ingress",
+    "rank": 4,
+    "ctx_words_at5": 757,
+    "latency_ms": 70.79076766967773
+   },
+   {
+    "id": "q044",
+    "difficulty": "easy",
+    "category": "revisions/deployment",
+    "rank": 1,
+    "ctx_words_at5": 730,
+    "latency_ms": 79.57005500793457
+   },
+   {
+    "id": "q046",
+    "difficulty": "medium",
+    "category": "dapr",
+    "rank": 1,
+    "ctx_words_at5": 524,
+    "latency_ms": 78.83286476135254
+   },
+   {
+    "id": "q047",
+    "difficulty": "easy",
+    "category": "dapr",
+    "rank": 4,
+    "ctx_words_at5": 733,
+    "latency_ms": 69.87380981445312
+   },
+   {
+    "id": "q048",
+    "difficulty": "medium",
+    "category": "storage",
+    "rank": 3,
+    "ctx_words_at5": 951,
+    "latency_ms": 81.89153671264648
+   }
+  ]
+ },
+ "hybrid@256": {
+  "method": "hybrid",
+  "chunk_size": 256,
+  "n_chunks": 2780,
+  "n": 40,
+  "mrr@10": 0.5311805555555555,
+  "avg_ctx_words@5": 671.05,
+  "avg_latency_ms": 101.5446424484253,
+  "hit@1": 0.4,
+  "hit@3": 0.575,
+  "hit@5": 0.725,
+  "hit@10": 0.875,
+  "by_difficulty": {
+   "easy": {
+    "n": 12,
+    "hit@5": 0.9166666666666666
+   },
+   "medium": {
+    "n": 18,
+    "hit@5": 0.6666666666666666
+   },
+   "hard": {
+    "n": 10,
+    "hit@5": 0.6
+   }
+  },
+  "per_question": [
+   {
+    "id": "q001",
+    "difficulty": "hard",
+    "category": "security",
+    "rank": 1,
+    "ctx_words_at5": 1078,
+    "latency_ms": 100.88086128234863
+   },
+   {
+    "id": "q002",
+    "difficulty": "hard",
+    "category": "troubleshooting",
+    "rank": 2,
+    "ctx_words_at5": 843,
+    "latency_ms": 115.94128608703613
+   },
+   {
+    "id": "q003",
+    "difficulty": "medium",
+    "category": "scaling",
+    "rank": 2,
+    "ctx_words_at5": 743,
+    "latency_ms": 108.57677459716797
+   },
+   {
+    "id": "q004",
+    "difficulty": "medium",
+    "category": "ai/mcp",
+    "rank": 3,
+    "ctx_words_at5": 625,
+    "latency_ms": 87.50176429748535
+   },
+   {
+    "id": "q005",
+    "difficulty": "easy",
+    "category": "observability/logging",
+    "rank": 4,
+    "ctx_words_at5": 848,
+    "latency_ms": 92.3769474029541
+   },
+   {
+    "id": "q007",
+    "difficulty": "easy",
+    "category": "security",
+    "rank": 2,
+    "ctx_words_at5": 553,
+    "latency_ms": 85.20054817199707
+   },
+   {
+    "id": "q008",
+    "difficulty": "medium",
+    "category": "networking/ingress",
+    "rank": null,
+    "ctx_words_at5": 314,
+    "latency_ms": 80.34515380859375
+   },
+   {
+    "id": "q009",
+    "difficulty": "hard",
+    "category": "billing/plans/quotas",
+    "rank": 1,
+    "ctx_words_at5": 858,
+    "latency_ms": 108.33096504211426
+   },
+   {
+    "id": "q010",
+    "difficulty": "hard",
+    "category": "networking/ingress",
+    "rank": 1,
+    "ctx_words_at5": 736,
+    "latency_ms": 122.21503257751465
+   },
+   {
+    "id": "q013",
+    "difficulty": "medium",
+    "category": "security",
+    "rank": null,
+    "ctx_words_at5": 520,
+    "latency_ms": 106.05430603027344
+   },
+   {
+    "id": "q014",
+    "difficulty": "easy",
+    "category": "jobs",
+    "rank": 1,
+    "ctx_words_at5": 533,
+    "latency_ms": 94.01822090148926
+   },
+   {
+    "id": "q015",
+    "difficulty": "easy",
+    "category": "billing/plans/quotas",
+    "rank": 4,
+    "ctx_words_at5": 580,
+    "latency_ms": 104.98714447021484
+   },
+   {
+    "id": "q016",
+    "difficulty": "medium",
+    "category": "GPU",
+    "rank": 1,
+    "ctx_words_at5": 422,
+    "latency_ms": 96.18330001831055
+   },
+   {
+    "id": "q017",
+    "difficulty": "medium",
+    "category": "troubleshooting",
+    "rank": 1,
+    "ctx_words_at5": 661,
+    "latency_ms": 98.78396987915039
+   },
+   {
+    "id": "q018",
+    "difficulty": "medium",
+    "category": "billing/plans/quotas",
+    "rank": 5,
+    "ctx_words_at5": 614,
+    "latency_ms": 126.93500518798828
+   },
+   {
+    "id": "q020",
+    "difficulty": "medium",
+    "category": "jobs",
+    "rank": 1,
+    "ctx_words_at5": 868,
+    "latency_ms": 107.08761215209961
+   },
+   {
+    "id": "q021",
+    "difficulty": "medium",
+    "category": "GPU",
+    "rank": 1,
+    "ctx_words_at5": 876,
+    "latency_ms": 96.47822380065918
+   },
+   {
+    "id": "q023",
+    "difficulty": "medium",
+    "category": "networking/ingress",
+    "rank": 3,
+    "ctx_words_at5": 804,
+    "latency_ms": 83.1911563873291
+   },
+   {
+    "id": "q024",
+    "difficulty": "hard",
+    "category": "observability/logging",
+    "rank": 9,
+    "ctx_words_at5": 597,
+    "latency_ms": 95.11184692382812
+   },
+   {
+    "id": "q025",
+    "difficulty": "medium",
+    "category": "networking/ingress",
+    "rank": 1,
+    "ctx_words_at5": 660,
+    "latency_ms": 95.55482864379883
+   },
+   {
+    "id": "q026",
+    "difficulty": "easy",
+    "category": "reliability/maintenance",
+    "rank": 1,
+    "ctx_words_at5": 657,
+    "latency_ms": 90.19970893859863
+   },
+   {
+    "id": "q027",
+    "difficulty": "hard",
+    "category": "networking/ingress",
+    "rank": 1,
+    "ctx_words_at5": 936,
+    "latency_ms": 92.62275695800781
+   },
+   {
+    "id": "q028",
+    "difficulty": "medium",
+    "category": "scaling",
+    "rank": null,
+    "ctx_words_at5": 438,
+    "latency_ms": 154.78777885437012
+   },
+   {
+    "id": "q029",
+    "difficulty": "hard",
+    "category": "billing/plans/quotas",
+    "rank": 1,
+    "ctx_words_at5": 589,
+    "latency_ms": 79.76078987121582
+   },
+   {
+    "id": "q030",
+    "difficulty": "easy",
+    "category": "jobs",
+    "rank": 1,
+    "ctx_words_at5": 578,
+    "latency_ms": 90.07620811462402
+   },
+   {
+    "id": "q032",
+    "difficulty": "medium",
+    "category": "security",
+    "rank": null,
+    "ctx_words_at5": 479,
+    "latency_ms": 109.10797119140625
+   },
+   {
+    "id": "q033",
+    "difficulty": "medium",
+    "category": "troubleshooting",
+    "rank": 6,
+    "ctx_words_at5": 521,
+    "latency_ms": 147.49741554260254
+   },
+   {
+    "id": "q034",
+    "difficulty": "easy",
+    "category": "security",
+    "rank": 2,
+    "ctx_words_at5": 707,
+    "latency_ms": 92.67234802246094
+   },
+   {
+    "id": "q035",
+    "difficulty": "easy",
+    "category": "troubleshooting",
+    "rank": 1,
+    "ctx_words_at5": 629,
+    "latency_ms": 97.27787971496582
+   },
+   {
+    "id": "q036",
+    "difficulty": "medium",
+    "category": "networking/ingress",
+    "rank": 9,
+    "ctx_words_at5": 492,
+    "latency_ms": 108.89363288879395
+   },
+   {
+    "id": "q037",
+    "difficulty": "hard",
+    "category": "billing/plans/quotas",
+    "rank": 6,
+    "ctx_words_at5": 425,
+    "latency_ms": 86.63749694824219
+   },
+   {
+    "id": "q039",
+    "difficulty": "hard",
+    "category": "storage",
+    "rank": null,
+    "ctx_words_at5": 786,
+    "latency_ms": 98.32954406738281
+   },
+   {
+    "id": "q040",
+    "difficulty": "medium",
+    "category": "sessions",
+    "rank": 1,
+    "ctx_words_at5": 723,
+    "latency_ms": 93.06502342224121
+   },
+   {
+    "id": "q041",
+    "difficulty": "easy",
+    "category": "sessions",
+    "rank": 5,
+    "ctx_words_at5": 593,
+    "latency_ms": 94.65861320495605
+   },
+   {
+    "id": "q042",
+    "difficulty": "hard",
+    "category": "scaling",
+    "rank": 8,
+    "ctx_words_at5": 667,
+    "latency_ms": 98.31047058105469
+   },
+   {
+    "id": "q043",
+    "difficulty": "easy",
+    "category": "networking/ingress",
+    "rank": 6,
+    "ctx_words_at5": 987,
+    "latency_ms": 99.45511817932129
+   },
+   {
+    "id": "q044",
+    "difficulty": "easy",
+    "category": "revisions/deployment",
+    "rank": 3,
+    "ctx_words_at5": 621,
+    "latency_ms": 110.98575592041016
+   },
+   {
+    "id": "q046",
+    "difficulty": "medium",
+    "category": "dapr",
+    "rank": 1,
+    "ctx_words_at5": 544,
+    "latency_ms": 117.0811653137207
+   },
+   {
+    "id": "q047",
+    "difficulty": "easy",
+    "category": "dapr",
+    "rank": 4,
+    "ctx_words_at5": 630,
+    "latency_ms": 84.94210243225098
+   },
+   {
+    "id": "q048",
+    "difficulty": "medium",
+    "category": "storage",
+    "rank": 4,
+    "ctx_words_at5": 1107,
+    "latency_ms": 109.66897010803223
+   }
+  ]
+ },
+ "hybrid+rerank@256": {
+  "method": "hybrid+rerank",
+  "chunk_size": 256,
+  "n_chunks": 2780,
+  "n": 40,
+  "mrr@10": 0.6050992063492063,
+  "avg_ctx_words@5": 692.9,
+  "avg_latency_ms": 3583.272349834442,
+  "hit@1": 0.475,
+  "hit@3": 0.725,
+  "hit@5": 0.775,
+  "hit@10": 0.85,
+  "by_difficulty": {
+   "easy": {
+    "n": 12,
+    "hit@5": 1.0
+   },
+   "medium": {
+    "n": 18,
+    "hit@5": 0.6666666666666666
+   },
+   "hard": {
+    "n": 10,
+    "hit@5": 0.7
+   }
+  },
+  "per_question": [
+   {
+    "id": "q001",
+    "difficulty": "hard",
+    "category": "security",
+    "rank": 1,
+    "ctx_words_at5": 898,
+    "latency_ms": 5221.041440963745
+   },
+   {
+    "id": "q002",
+    "difficulty": "hard",
+    "category": "troubleshooting",
+    "rank": 1,
+    "ctx_words_at5": 927,
+    "latency_ms": 4308.202743530273
+   },
+   {
+    "id": "q003",
+    "difficulty": "medium",
+    "category": "scaling",
+    "rank": 1,
+    "ctx_words_at5": 732,
+    "latency_ms": 4652.681589126587
+   },
+   {
+    "id": "q004",
+    "difficulty": "medium",
+    "category": "ai/mcp",
+    "rank": 3,
+    "ctx_words_at5": 525,
+    "latency_ms": 4949.04637336731
+   },
+   {
+    "id": "q005",
+    "difficulty": "easy",
+    "category": "observability/logging",
+    "rank": 1,
+    "ctx_words_at5": 988,
+    "latency_ms": 4939.418792724609
+   },
+   {
+    "id": "q007",
+    "difficulty": "easy",
+    "category": "security",
+    "rank": 2,
+    "ctx_words_at5": 553,
+    "latency_ms": 4875.169277191162
+   },
+   {
+    "id": "q008",
+    "difficulty": "medium",
+    "category": "networking/ingress",
+    "rank": null,
+    "ctx_words_at5": 501,
+    "latency_ms": 3343.3032035827637
+   },
+   {
+    "id": "q009",
+    "difficulty": "hard",
+    "category": "billing/plans/quotas",
+    "rank": 1,
+    "ctx_words_at5": 852,
+    "latency_ms": 3608.6480617523193
+   },
+   {
+    "id": "q010",
+    "difficulty": "hard",
+    "category": "networking/ingress",
+    "rank": 1,
+    "ctx_words_at5": 783,
+    "latency_ms": 4031.802177429199
+   },
+   {
+    "id": "q013",
+    "difficulty": "medium",
+    "category": "security",
+    "rank": null,
+    "ctx_words_at5": 533,
+    "latency_ms": 4684.25989151001
+   },
+   {
+    "id": "q014",
+    "difficulty": "easy",
+    "category": "jobs",
+    "rank": 3,
+    "ctx_words_at5": 683,
+    "latency_ms": 4230.134725570679
+   },
+   {
+    "id": "q015",
+    "difficulty": "easy",
+    "category": "billing/plans/quotas",
+    "rank": 3,
+    "ctx_words_at5": 474,
+    "latency_ms": 3839.9174213409424
+   },
+   {
+    "id": "q016",
+    "difficulty": "medium",
+    "category": "GPU",
+    "rank": 1,
+    "ctx_words_at5": 443,
+    "latency_ms": 3418.424367904663
+   },
+   {
+    "id": "q017",
+    "difficulty": "medium",
+    "category": "troubleshooting",
+    "rank": 1,
+    "ctx_words_at5": 800,
+    "latency_ms": 2787.647008895874
+   },
+   {
+    "id": "q018",
+    "difficulty": "medium",
+    "category": "billing/plans/quotas",
+    "rank": null,
+    "ctx_words_at5": 694,
+    "latency_ms": 4370.1043128967285
+   },
+   {
+    "id": "q020",
+    "difficulty": "medium",
+    "category": "jobs",
+    "rank": 1,
+    "ctx_words_at5": 863,
+    "latency_ms": 2855.65185546875
+   },
+   {
+    "id": "q021",
+    "difficulty": "medium",
+    "category": "GPU",
+    "rank": 9,
+    "ctx_words_at5": 600,
+    "latency_ms": 3820.401430130005
+   },
+   {
+    "id": "q023",
+    "difficulty": "medium",
+    "category": "networking/ingress",
+    "rank": 3,
+    "ctx_words_at5": 809,
+    "latency_ms": 2824.185371398926
+   },
+   {
+    "id": "q024",
+    "difficulty": "hard",
+    "category": "observability/logging",
+    "rank": 4,
+    "ctx_words_at5": 738,
+    "latency_ms": 4564.349412918091
+   },
+   {
+    "id": "q025",
+    "difficulty": "medium",
+    "category": "networking/ingress",
+    "rank": 1,
+    "ctx_words_at5": 660,
+    "latency_ms": 4053.8318157196045
+   },
+   {
+    "id": "q026",
+    "difficulty": "easy",
+    "category": "reliability/maintenance",
+    "rank": 1,
+    "ctx_words_at5": 826,
+    "latency_ms": 4407.479524612427
+   },
+   {
+    "id": "q027",
+    "difficulty": "hard",
+    "category": "networking/ingress",
+    "rank": 1,
+    "ctx_words_at5": 936,
+    "latency_ms": 4467.774868011475
+   },
+   {
+    "id": "q028",
+    "difficulty": "medium",
+    "category": "scaling",
+    "rank": null,
+    "ctx_words_at5": 400,
+    "latency_ms": 4541.250944137573
+   },
+   {
+    "id": "q029",
+    "difficulty": "hard",
+    "category": "billing/plans/quotas",
+    "rank": 5,
+    "ctx_words_at5": 613,
+    "latency_ms": 4789.721250534058
+   },
+   {
+    "id": "q030",
+    "difficulty": "easy",
+    "category": "jobs",
+    "rank": 1,
+    "ctx_words_at5": 573,
+    "latency_ms": 4538.740158081055
+   },
+   {
+    "id": "q032",
+    "difficulty": "medium",
+    "category": "security",
+    "rank": null,
+    "ctx_words_at5": 436,
+    "latency_ms": 4469.172716140747
+   },
+   {
+    "id": "q033",
+    "difficulty": "medium",
+    "category": "troubleshooting",
+    "rank": 2,
+    "ctx_words_at5": 661,
+    "latency_ms": 3882.5137615203857
+   },
+   {
+    "id": "q034",
+    "difficulty": "easy",
+    "category": "security",
+    "rank": 2,
+    "ctx_words_at5": 690,
+    "latency_ms": 4673.266649246216
+   },
+   {
+    "id": "q035",
+    "difficulty": "easy",
+    "category": "troubleshooting",
+    "rank": 1,
+    "ctx_words_at5": 838,
+    "latency_ms": 3629.7285556793213
+   },
+   {
+    "id": "q036",
+    "difficulty": "medium",
+    "category": "networking/ingress",
+    "rank": 2,
+    "ctx_words_at5": 712,
+    "latency_ms": 1609.5635890960693
+   },
+   {
+    "id": "q037",
+    "difficulty": "hard",
+    "category": "billing/plans/quotas",
+    "rank": 7,
+    "ctx_words_at5": 425,
+    "latency_ms": 1046.8683242797852
+   },
+   {
+    "id": "q039",
+    "difficulty": "hard",
+    "category": "storage",
+    "rank": 6,
+    "ctx_words_at5": 659,
+    "latency_ms": 1338.9873504638672
+   },
+   {
+    "id": "q040",
+    "difficulty": "medium",
+    "category": "sessions",
+    "rank": 2,
+    "ctx_words_at5": 907,
+    "latency_ms": 1594.6011543273926
+   },
+   {
+    "id": "q041",
+    "difficulty": "easy",
+    "category": "sessions",
+    "rank": 1,
+    "ctx_words_at5": 556,
+    "latency_ms": 1814.6007061004639
+   },
+   {
+    "id": "q042",
+    "difficulty": "hard",
+    "category": "scaling",
+    "rank": null,
+    "ctx_words_at5": 891,
+    "latency_ms": 2036.3354682922363
+   },
+   {
+    "id": "q043",
+    "difficulty": "easy",
+    "category": "networking/ingress",
+    "rank": 1,
+    "ctx_words_at5": 765,
+    "latency_ms": 1569.68355178833
+   },
+   {
+    "id": "q044",
+    "difficulty": "easy",
+    "category": "revisions/deployment",
+    "rank": 1,
+    "ctx_words_at5": 662,
+    "latency_ms": 1265.2480602264404
+   },
+   {
+    "id": "q046",
+    "difficulty": "medium",
+    "category": "dapr",
+    "rank": 1,
+    "ctx_words_at5": 488,
+    "latency_ms": 2850.599765777588
+   },
+   {
+    "id": "q047",
+    "difficulty": "easy",
+    "category": "dapr",
+    "rank": 1,
+    "ctx_words_at5": 630,
+    "latency_ms": 4926.892995834351
+   },
+   {
+    "id": "q048",
+    "difficulty": "medium",
+    "category": "storage",
+    "rank": 2,
+    "ctx_words_at5": 992,
+    "latency_ms": 2499.643325805664
+   }
+  ]
+ }
+}

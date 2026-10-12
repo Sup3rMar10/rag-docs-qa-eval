@@ -1,0 +1,8 @@
+torch>=2.4
+transformers>=4.51,<5
+sentence-transformers>=3.0
+rank-bm25>=0.2.2
+fastapi>=0.110
+uvicorn[standard]>=0.29
+numpy>=1.26
+matplotlib>=3.8

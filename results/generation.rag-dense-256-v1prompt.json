@@ -1,0 +1,888 @@
+{
+ "name": "rag-dense-256 (prompt v1)",
+ "mode": "rag",
+ "model": "Qwen/Qwen2.5-1.5B-Instruct",
+ "method": "dense",
+ "chunk_size": 256,
+ "k": 4,
+ "summary": {
+  "n_answerable": 40,
+  "n_unanswerable": 8,
+  "answer_accuracy": 0.575,
+  "citation_grounded_rate": 0.2,
+  "false_abstention_rate": 0.025,
+  "abstention_rate_on_unanswerable": 0.5,
+  "hallucination_rate_on_unanswerable": 0.5,
+  "n_evidence_in_context": 34,
+  "accuracy_when_evidence_in_context": 0.6470588235294118,
+  "accuracy_when_retrieval_missed": 0.16666666666666666,
+  "avg_seconds_per_question": 77.30833333333334
+ },
+ "rows": [
+  {
+   "id": "q001",
+   "type": "answerable",
+   "difficulty": "hard",
+   "question": "My domain has CAA records; what exact record do I add so the free TLS cert can be issued?",
+   "answer": "To issue the free TLS certificate through Azure Container Apps when you have CAA records, you need to add a specific CAA domain record allowing DigiCert as a certificate issuer. Specifically, you should create a CAA domain record with the value `0 issue digicert.com`. This ensures that the certificate issuance and renewal process will proceed correctly despite existing CAA records on the root domain.",
+   "context_docs": [
+    "custom-domains-managed-certificates.md",
+    "custom-domains-managed-certificates.md",
+    "custom-domains-certificates.md",
+    "custom-domains-managed-certificates.md"
+   ],
+   "evidence_in_context": true,
+   "correct": true,
+   "citation_grounded": false,
+   "abstained": false,
+   "seconds": 43.1
+  },
+  {
+   "id": "q002",
+   "type": "answerable",
+   "difficulty": "hard",
+   "question": "With ingress on and no probes of my own, how many failed checks does the auto-added startup probe allow before giving up?",
+   "answer": "The auto-added startup probe allows 240 failed checks before giving up. [1]",
+   "context_docs": [
+    "health-probes.md",
+    "troubleshoot-container-start-failures.md",
+    "troubleshoot-deployment-errors.md",
+    "troubleshooting.md"
+   ],
+   "evidence_in_context": true,
+   "correct": true,
+   "citation_grounded": true,
+   "abstained": false,
+   "seconds": 33.4
+  },
+  {
+   "id": "q003",
+   "type": "answerable",
+   "difficulty": "medium",
+   "question": "After the queue drains, how long does KEDA hold off before taking my app all the way down to zero replicas?",
+   "answer": "[Knowledge extracted from passage [2]]  \nKEDA holds off for 300 seconds before taking the app all the way down to zero replicas.",
+   "context_docs": [
+    "scale-app.md",
+    "scale-app.md",
+    "scale-app.md",
+    "container-apps-extension-release-notes.md"
+   ],
+   "evidence_in_context": true,
+   "correct": true,
+   "citation_grounded": true,
+   "abstained": false,
+   "seconds": 62.5
+  },
+  {
+   "id": "q004",
+   "type": "answerable",
+   "difficulty": "medium",
+   "question": "What transport does an MCP client use to reach my hosted server?",
+   "answer": "[1] The MCP streamable HTTP transport runs inside your container over standard HTTP, so set transport to auto or http (the default).",
+   "context_docs": [
+    "mcp-overview.md",
+    "mcp-overview.md",
+    "mcp-overview.md",
+    "mcp-overview.md"
+   ],
+   "evidence_in_context": true,
+   "correct": true,
+   "citation_grounded": false,
+   "abstained": false,
+   "seconds": 41.2
+  },
+  {
+   "id": "q005",
+   "type": "answerable",
+   "difficulty": "easy",
+   "question": "How many separate log-routing configurations can one environment have under Azure Monitor?",
+   "answer": "One environment can have up to five diagnostic settings.",
+   "context_docs": [
+    "migrate-logs-azure-monitor.md",
+    "migrate-logs-azure-monitor.md",
+    "migrate-logs-azure-monitor.md",
+    "secure-deployment.md"
+   ],
+   "evidence_in_context": true,
+   "correct": true,
+   "citation_grounded": false,
+   "abstained": false,
+   "seconds": 70.7
+  },
+  {
+   "id": "q006",
+   "type": "unanswerable",
+   "difficulty": "medium",
+   "question": "How many custom domains can I bind to a single container app?",
+   "answer": "One custom domain can be bound to a single container app.",
+   "context_docs": [
+    "connect-apps.md",
+    "custom-domains-certificates.md",
+    "custom-domains-managed-certificates.md",
+    "custom-domains-certificates.md"
+   ],
+   "evidence_in_context": false,
+   "correct": false,
+   "citation_grounded": false,
+   "abstained": false,
+   "seconds": 33.4
+  },
+  {
+   "id": "q007",
+   "type": "answerable",
+   "difficulty": "easy",
+   "question": "Which RBAC role must be assigned to people who create sandboxes?",
+   "answer": "[2]",
+   "context_docs": [
+    "sandboxes-overview.md",
+    "sandboxes-get-started.md",
+    "sandboxes-quickstart-python-sdk.md",
+    "github-actions-cli.md"
+   ],
+   "evidence_in_context": true,
+   "correct": false,
+   "citation_grounded": false,
+   "abstained": false,
+   "seconds": 37.2
+  },
+  {
+   "id": "q008",
+   "type": "answerable",
+   "difficulty": "medium",
+   "question": "How does the platform keep a returning user on the same instance, and in which revision mode does that work?",
+   "answer": "[1] The platform keeps a returning user on the same instance by automatically activating and scaling new revisions once they meet the specified criteria. In single revision mode, it ensures that only one revision is active at any given time, so users stay on the most recent version.",
+   "context_docs": [
+    "revisions.md",
+    "revisions-manage.md",
+    "revisions-manage.md",
+    "revisions.md"
+   ],
+   "evidence_in_context": false,
+   "correct": false,
+   "citation_grounded": false,
+   "abstained": false,
+   "seconds": 60.4
+  },
+  {
+   "id": "q009",
+   "type": "answerable",
+   "difficulty": "hard",
+   "question": "How many replicas can an Express app scale to, and how many Express environments can one region hold?",
+   "answer": "An Express app can scale to a maximum of 30 replicas per revision, and one region can hold up to 200 Express environments.",
+   "context_docs": [
+    "quotas.md",
+    "scale-app.md",
+    "express-overview.md",
+    "express-overview.md"
+   ],
+   "evidence_in_context": true,
+   "correct": true,
+   "citation_grounded": false,
+   "abstained": false,
+   "seconds": 54.6
+  },
+  {
+   "id": "q010",
+   "type": "answerable",
+   "difficulty": "hard",
+   "question": "Behind the internal load balancer on a workload profiles environment, which ports does the edge proxy actually answer on for plain HTTP and for TLS traffic?",
+   "answer": "For plain HTTP traffic, the edge proxy answers on port 80 within the workload profiles environment. For TLS traffic, it answers on port 443.",
+   "context_docs": [
+    "firewall-integration.md",
+    "networking.md",
+    "express-overview.md",
+    "front-door-custom-virtual-network-private-link.md"
+   ],
+   "evidence_in_context": true,
+   "correct": false,
+   "citation_grounded": false,
+   "abstained": false,
+   "seconds": 67.2
+  },
+  {
+   "id": "q011",
+   "type": "unanswerable",
+   "difficulty": "medium",
+   "question": "What is the per-vCPU-second price on the Consumption plan in East US, in US dollars?",
+   "answer": "I don't know based on the provided documentation.",
+   "context_docs": [
+    "billing.md",
+    "billing.md",
+    "structure.md",
+    "structure.md"
+   ],
+   "evidence_in_context": false,
+   "correct": false,
+   "citation_grounded": false,
+   "abstained": true,
+   "seconds": 39.8
+  },
+  {
+   "id": "q012",
+   "type": "unanswerable",
+   "difficulty": "medium",
+   "question": "How does Azure Container Apps cold-start latency compare with AWS Fargate or Google Cloud Run?",
+   "answer": "I don't know based on the provided documentation.",
+   "context_docs": [
+    "cold-start.md",
+    "cold-start.md",
+    "mcp-troubleshooting.md",
+    "cold-start.md"
+   ],
+   "evidence_in_context": false,
+   "correct": false,
+   "citation_grounded": false,
+   "abstained": true,
+   "seconds": 34.8
+  },
+  {
+   "id": "q013",
+   "type": "answerable",
+   "difficulty": "medium",
+   "question": "How do I get my containers' data protected while in use by hardware-based trusted execution, and at what level is it configured?",
+   "answer": "To get your containers' data protected while in use by hardware-based trusted execution environments (TEEs), you should:\n\n1. Use the confidential compute workload profile in Azure Container Apps.\n2. Ensure that your applications process regulated or highly sensitive data.\n3. Implement proper secrets management using the Container Apps built-in secrets store.\n4. Use the Container Apps built-in secrets store to hold sensitive values with proper isolation and access controls.\n\nThis approach leverages Azure's confidential computing capabilities to enhance security for your containerized workloads.",
+   "context_docs": [
+    "dotnet-overview.md",
+    "secure-deployment.md",
+    "security.md",
+    "secure-deployment.md"
+   ],
+   "evidence_in_context": false,
+   "correct": false,
+   "citation_grounded": false,
+   "abstained": false,
+   "seconds": 84.7
+  },
+  {
+   "id": "q014",
+   "type": "answerable",
+   "difficulty": "easy",
+   "question": "In the portal, how many previous runs does the history view list for a cron-triggered job?",
+   "answer": "The execution history for scheduled and event-based jobs is limited to the most recent 100 successful and failed job executions.",
+   "context_docs": [
+    "jobs.md",
+    "jobs.md",
+    "jobs.md",
+    "tutorial-ci-cd-runners-jobs.md"
+   ],
+   "evidence_in_context": true,
+   "correct": true,
+   "citation_grounded": false,
+   "abstained": false,
+   "seconds": 45.9
+  },
+  {
+   "id": "q015",
+   "type": "answerable",
+   "difficulty": "easy",
+   "question": "How much CPU and memory usage is covered at no charge every month for a subscription on the pay-per-use plan?",
+   "answer": "[1] \"The first 180,000 vCPU-seconds\" and \"[1] 'The first 360,000 GiB-seconds'\"",
+   "context_docs": [
+    "billing.md",
+    "billing.md",
+    "billing.md",
+    "billing.md"
+   ],
+   "evidence_in_context": false,
+   "correct": true,
+   "citation_grounded": false,
+   "abstained": false,
+   "seconds": 52.4
+  },
+  {
+   "id": "q016",
+   "type": "answerable",
+   "difficulty": "medium",
+   "question": "I have a main container and a sidecar in a GPU app. Which of them can use the GPU?",
+   "answer": "Only the first container in a function app can access the GPU when using sidecars. The main container cannot directly access the GPU; it needs to be configured to share resources with the sidecar.",
+   "context_docs": [
+    "functions-gpu-container-apps.md",
+    "functions-gpu-container-apps.md",
+    "gpu-types.md",
+    "functions-gpu-container-apps.md"
+   ],
+   "evidence_in_context": true,
+   "correct": true,
+   "citation_grounded": false,
+   "abstained": false,
+   "seconds": 46.3
+  },
+  {
+   "id": "q017",
+   "type": "answerable",
+   "difficulty": "medium",
+   "question": "Some clients receive an RBAC-flavored access denied response from my app. What's blocking them?",
+   "answer": "Based on the passage [1], the blockage preventing clients from accessing your Azure Container App could be due to IP restrictions set up in the app settings. Ensure that the client IP address being used has been allowed according to the allow or deny rules configured for the container app.",
+   "context_docs": [
+    "ip-restrictions.md",
+    "aspire-dashboard.md",
+    "troubleshoot-deployment-errors.md",
+    "managed-identity.md"
+   ],
+   "evidence_in_context": true,
+   "correct": true,
+   "citation_grounded": true,
+   "abstained": false,
+   "seconds": 60.9
+  },
+  {
+   "id": "q018",
+   "type": "answerable",
+   "difficulty": "medium",
+   "question": "My app keeps one instance warm all the time. Below what CPU usage and inbound network rate does that instance get the cheaper rate?",
+   "answer": "[1] \"Idle usage charges don't apply to serverless GPU apps. They're always billed for active usage.\"",
+   "context_docs": [
+    "billing.md",
+    "premium-ingress.md",
+    "cold-start.md",
+    "tutorial-gpu-image-generation.md"
+   ],
+   "evidence_in_context": true,
+   "correct": false,
+   "citation_grounded": true,
+   "abstained": false,
+   "seconds": 55.6
+  },
+  {
+   "id": "q019",
+   "type": "unanswerable",
+   "difficulty": "easy",
+   "question": "How long does it typically take to provision a brand-new Container Apps environment?",
+   "answer": "It typically takes about 5 to 10 minutes for key vault access to work after creating a new Container Apps environment.",
+   "context_docs": [
+    "troubleshoot-deployment-errors.md",
+    "troubleshooting.md",
+    "revisions.md",
+    "get-started-existing-container-image-portal.md"
+   ],
+   "evidence_in_context": false,
+   "correct": false,
+   "citation_grounded": false,
+   "abstained": false,
+   "seconds": 53.6
+  },
+  {
+   "id": "q020",
+   "type": "answerable",
+   "difficulty": "medium",
+   "question": "Platform upgrades might kill my long-running batch replica midway. What retry setting should I use?",
+   "answer": "Set the replica retry limit to at least 1.",
+   "context_docs": [
+    "jobs.md",
+    "tutorial-ci-cd-runners-jobs.md",
+    "tutorial-gpu-image-generation.md",
+    "revisions.md"
+   ],
+   "evidence_in_context": true,
+   "correct": true,
+   "citation_grounded": false,
+   "abstained": false,
+   "seconds": 1939.9
+  },
+  {
+   "id": "q021",
+   "type": "answerable",
+   "difficulty": "medium",
+   "question": "How much video memory does each of the two serverless GPU models offer?",
+   "answer": "I don't know based on the provided documentation.",
+   "context_docs": [
+    "tutorial-gpu-image-generation.md",
+    "gpu-serverless-overview.md",
+    "gpu-serverless-overview.md",
+    "gpu-serverless-overview.md"
+   ],
+   "evidence_in_context": false,
+   "correct": false,
+   "citation_grounded": false,
+   "abstained": true,
+   "seconds": 37.5
+  },
+  {
+   "id": "q022",
+   "type": "unanswerable",
+   "difficulty": "medium",
+   "question": "By default, how many managed environments can one subscription create per region?",
+   "answer": "[1]",
+   "context_docs": [
+    "quotas.md",
+    "quotas.md",
+    "custom-virtual-networks.md",
+    "quotas.md"
+   ],
+   "evidence_in_context": false,
+   "correct": false,
+   "citation_grounded": false,
+   "abstained": false,
+   "seconds": 33.3
+  },
+  {
+   "id": "q023",
+   "type": "answerable",
+   "difficulty": "medium",
+   "question": "Which ingress capabilities are missing on the fast-deploy Express option?",
+   "answer": "[1]",
+   "context_docs": [
+    "express-overview.md",
+    "express-overview.md",
+    "express-overview.md",
+    "gpu-image-generation.md"
+   ],
+   "evidence_in_context": true,
+   "correct": false,
+   "citation_grounded": false,
+   "abstained": false,
+   "seconds": 49.1
+  },
+  {
+   "id": "q024",
+   "type": "answerable",
+   "difficulty": "hard",
+   "question": "Which metric ID should I chart to see how often my app's containers have restarted?",
+   "answer": "[2]",
+   "context_docs": [
+    "metrics.md",
+    "metrics.md",
+    "metrics.md",
+    "metrics.md"
+   ],
+   "evidence_in_context": true,
+   "correct": false,
+   "citation_grounded": true,
+   "abstained": false,
+   "seconds": 30.7
+  },
+  {
+   "id": "q025",
+   "type": "answerable",
+   "difficulty": "medium",
+   "question": "In the standard ingress mode, how much CPU and memory does each edge proxy instance get?",
+   "answer": "Each edge proxy instance gets up to 1 vCPU core and 2 GB of memory in the default ingress mode.",
+   "context_docs": [
+    "ingress-environment-configuration.md",
+    "ingress-environment-configuration.md",
+    "premium-ingress.md",
+    "ingress-environment-configuration.md"
+   ],
+   "evidence_in_context": true,
+   "correct": true,
+   "citation_grounded": false,
+   "abstained": false,
+   "seconds": 20.1
+  },
+  {
+   "id": "q026",
+   "type": "answerable",
+   "difficulty": "easy",
+   "question": "What's the smallest duration I can set when scheduling the weekly slot for routine platform upgrades?",
+   "answer": "[2]",
+   "context_docs": [
+    "planned-maintenance.md",
+    "planned-maintenance.md",
+    "planned-maintenance.md",
+    "planned-maintenance.md"
+   ],
+   "evidence_in_context": true,
+   "correct": false,
+   "citation_grounded": false,
+   "abstained": false,
+   "seconds": 12.7
+  },
+  {
+   "id": "q027",
+   "type": "answerable",
+   "difficulty": "hard",
+   "question": "Is there any port number I'm not allowed to use for extra exposed ports?",
+   "answer": "Yes, port number 36985 is reserved for internal health checks and isn't available to TCP applications or extra exposed ports on HTTP applications.",
+   "context_docs": [
+    "ingress-overview.md",
+    "ingress-how-to.md",
+    "troubleshoot-target-port-settings.md",
+    "ingress-how-to.md"
+   ],
+   "evidence_in_context": true,
+   "correct": true,
+   "citation_grounded": false,
+   "abstained": false,
+   "seconds": 37.0
+  },
+  {
+   "id": "q028",
+   "type": "answerable",
+   "difficulty": "medium",
+   "question": "Where should my image registry live to make the first request after scale-to-zero faster?",
+   "answer": "To make the first request after scale-to-zero faster, your image registry should be located in the same region as your environment.",
+   "context_docs": [
+    "gpu-serverless-overview.md",
+    "functions-gpu-container-apps.md",
+    "javascript-overview.md",
+    "cold-start.md"
+   ],
+   "evidence_in_context": true,
+   "correct": true,
+   "citation_grounded": false,
+   "abstained": false,
+   "seconds": 23.9
+  },
+  {
+   "id": "q029",
+   "type": "answerable",
+   "difficulty": "hard",
+   "question": "What VM size do the nodes behind a bring-your-own-container session pool use?",
+   "answer": "Based on passage [1], the nodes behind a bring-your-own-container session pool use the Dedicated plan, specifically E16 compute instances.",
+   "context_docs": [
+    "billing.md",
+    "sessions-custom-container.md",
+    "session-pool.md",
+    "session-pool.md"
+   ],
+   "evidence_in_context": true,
+   "correct": true,
+   "citation_grounded": true,
+   "abstained": false,
+   "seconds": 24.7
+  },
+  {
+   "id": "q030",
+   "type": "answerable",
+   "difficulty": "easy",
+   "question": "My nightly job runs at the wrong hour - which time zone does its schedule follow?",
+   "answer": "The schedule follows UTC.",
+   "context_docs": [
+    "jobs.md",
+    "cold-start.md",
+    "planned-maintenance.md",
+    "planned-maintenance.md"
+   ],
+   "evidence_in_context": true,
+   "correct": true,
+   "citation_grounded": false,
+   "abstained": false,
+   "seconds": 15.5
+  },
+  {
+   "id": "q031",
+   "type": "unanswerable",
+   "difficulty": "easy",
+   "question": "What is the maximum number of secrets I can store on one container app?",
+   "answer": "I don't know based on the provided documentation.",
+   "context_docs": [
+    "functions-secrets-app-level.md",
+    "functions-secrets-app-level.md",
+    "functions-secrets-app-level.md",
+    "security.md"
+   ],
+   "evidence_in_context": false,
+   "correct": false,
+   "citation_grounded": false,
+   "abstained": true,
+   "seconds": 16.1
+  },
+  {
+   "id": "q032",
+   "type": "answerable",
+   "difficulty": "medium",
+   "question": "I rotated a secret's value. What do I have to do for apps already running to see the new value?",
+   "answer": "Deploy a new revision.",
+   "context_docs": [
+    "manage-secrets.md",
+    "manage-secrets.md",
+    "functions-secrets-app-level.md",
+    "manage-secrets.md"
+   ],
+   "evidence_in_context": true,
+   "correct": false,
+   "citation_grounded": false,
+   "abstained": false,
+   "seconds": 19.5
+  },
+  {
+   "id": "q033",
+   "type": "answerable",
+   "difficulty": "medium",
+   "question": "What ACR role should my app's identity hold so image pulls don't fail?",
+   "answer": "The ACR role that should be assigned to your app's identity is the **AcrPull** role.",
+   "context_docs": [
+    "managed-identity-image-pull.md",
+    "troubleshoot-deployment-errors.md",
+    "security.md",
+    "troubleshoot-image-pull-failures.md"
+   ],
+   "evidence_in_context": true,
+   "correct": true,
+   "citation_grounded": false,
+   "abstained": false,
+   "seconds": 24.4
+  },
+  {
+   "id": "q034",
+   "type": "answerable",
+   "difficulty": "easy",
+   "question": "How does my backend get at the TLS client cert when I require mutual TLS?",
+   "answer": "Your backend gets the TLS client certificate when requiring mutual TLS by exchanging it with Envoy during the mTLS handshake process. Specifically, each of the client's TLS certificates is placed into the X-Forwarded-Client-Cert header, which is then sent to the application.",
+   "context_docs": [
+    "client-certificate-authorization.md",
+    "mtls.md",
+    "mtls.md",
+    "mtls.md"
+   ],
+   "evidence_in_context": true,
+   "correct": true,
+   "citation_grounded": false,
+   "abstained": false,
+   "seconds": 36.5
+  },
+  {
+   "id": "q035",
+   "type": "answerable",
+   "difficulty": "easy",
+   "question": "What HTTP statuses should my /health endpoint return for Container Apps to treat the check as passing?",
+   "answer": "Your /health endpoint should return an HTTP status code greater than or equal to 200 and less than 400 to indicate success. Any other response code outside this range would indicate a failure.",
+   "context_docs": [
+    "health-probes.md",
+    "dotnet-overview.md",
+    "health-probes.md",
+    "health-probes.md"
+   ],
+   "evidence_in_context": true,
+   "correct": true,
+   "citation_grounded": false,
+   "abstained": false,
+   "seconds": 31.1
+  },
+  {
+   "id": "q036",
+   "type": "answerable",
+   "difficulty": "medium",
+   "question": "What's the smallest subnet I need for the infrastructure of a new default-type environment versus the older consumption-only type?",
+   "answer": "[1] The Consumption-only environment type supports UDRs, egress through Azure NAT Gateway, and creating private endpoints in the container app environment. It also allows for a minimum required subnet size of /23.\n[2] The Consumption-only environment type requires a minimum subnet size of /23 for virtual network integration.",
+   "context_docs": [
+    "networking.md",
+    "custom-virtual-networks.md",
+    "environment-type-consumption-only.md",
+    "environment-type-consumption-only.md"
+   ],
+   "evidence_in_context": true,
+   "correct": false,
+   "citation_grounded": true,
+   "abstained": false,
+   "seconds": 42.9
+  },
+  {
+   "id": "q037",
+   "type": "answerable",
+   "difficulty": "hard",
+   "question": "Where can I run the hardware-encrypted DC-series profiles right now?",
+   "answer": "[1]",
+   "context_docs": [
+    "confidential-compute.md",
+    "confidential-compute.md",
+    "confidential-compute.md",
+    "confidential-compute.md"
+   ],
+   "evidence_in_context": false,
+   "correct": false,
+   "citation_grounded": false,
+   "abstained": false,
+   "seconds": 13.7
+  },
+  {
+   "id": "q038",
+   "type": "unanswerable",
+   "difficulty": "medium",
+   "question": "What is the maximum number of container apps I can run in a single environment?",
+   "answer": "[1]",
+   "context_docs": [
+    "environment.md",
+    "containers.md",
+    "networking.md",
+    "environment.md"
+   ],
+   "evidence_in_context": false,
+   "correct": false,
+   "citation_grounded": false,
+   "abstained": false,
+   "seconds": 16.2
+  },
+  {
+   "id": "q039",
+   "type": "answerable",
+   "difficulty": "hard",
+   "question": "How much scratch disk does each replica get if I allocate half a CPU core?",
+   "answer": "[1]",
+   "context_docs": [
+    "sandboxes-overview.md",
+    "billing.md",
+    "tutorial-gpu-image-generation.md",
+    "metrics.md"
+   ],
+   "evidence_in_context": false,
+   "correct": false,
+   "citation_grounded": false,
+   "abstained": false,
+   "seconds": 22.6
+  },
+  {
+   "id": "q040",
+   "type": "answerable",
+   "difficulty": "medium",
+   "question": "What range of idle seconds can I configure before an unused session is shut down in a pool?",
+   "answer": "In a pool, you can configure the cooldown period to be between 300 and 3600 seconds before an unused session is shut down. This setting ensures that sessions remain active only while they are actively processing requests.",
+   "context_docs": [
+    "session-pool.md",
+    "session-pool.md",
+    "session-pool.md",
+    "sessions.md"
+   ],
+   "evidence_in_context": true,
+   "correct": true,
+   "citation_grounded": false,
+   "abstained": false,
+   "seconds": 37.9
+  },
+  {
+   "id": "q041",
+   "type": "answerable",
+   "difficulty": "easy",
+   "question": "What's the longest a single piece of code can run in a built-in interpreter session?",
+   "answer": "[1] The built-in code interpreter sessions support the most common code execution scenarios without requiring you to manage infrastructure or containers.",
+   "context_docs": [
+    "sessions-code-interpreter.md",
+    "sessions-code-interpreter.md",
+    "sessions-code-interpreter.md",
+    "sessions-tutorial-langchain.md"
+   ],
+   "evidence_in_context": true,
+   "correct": false,
+   "citation_grounded": false,
+   "abstained": false,
+   "seconds": 30.7
+  },
+  {
+   "id": "q042",
+   "type": "answerable",
+   "difficulty": "hard",
+   "question": "As load spikes and a custom KEDA rule triggers, what progression of replica additions does the autoscaler follow?",
+   "answer": "The autoscaler follows a specific pattern of replica additions when a custom KEDA rule triggers under high load. Initially, it adds one replica at a time starting from 1, increasing by powers of two (1, 4, 8, 16, etc.) until reaching the configured maximum replica count.",
+   "context_docs": [
+    "scale-app.md",
+    "scale-app.md",
+    "diagnose-solve.md",
+    "functions-scale-rule-override.md"
+   ],
+   "evidence_in_context": true,
+   "correct": true,
+   "citation_grounded": false,
+   "abstained": false,
+   "seconds": 41.8
+  },
+  {
+   "id": "q043",
+   "type": "answerable",
+   "difficulty": "easy",
+   "question": "How long can an HTTP call sit open at the ingress before it's cut off?",
+   "answer": "[2] The request idle timeout for an HTTP call in the ingress is 4 minutes.",
+   "context_docs": [
+    "ingress-environment-configuration.md",
+    "dotnet-overview.md",
+    "premium-ingress.md",
+    "ingress-overview.md"
+   ],
+   "evidence_in_context": true,
+   "correct": false,
+   "citation_grounded": false,
+   "abstained": false,
+   "seconds": 27.0
+  },
+  {
+   "id": "q044",
+   "type": "answerable",
+   "difficulty": "easy",
+   "question": "By default how many dormant older versions of my app does the platform keep track of, and which create/update flag changes that limit?",
+   "answer": "[1]",
+   "context_docs": [
+    "revisions.md",
+    "revisions.md",
+    "revisions.md",
+    "revisions.md"
+   ],
+   "evidence_in_context": true,
+   "correct": false,
+   "citation_grounded": true,
+   "abstained": false,
+   "seconds": 18.9
+  },
+  {
+   "id": "q045",
+   "type": "unanswerable",
+   "difficulty": "easy",
+   "question": "What uptime SLA percentage does Microsoft guarantee for Azure Container Apps?",
+   "answer": "I don't know based on the provided documentation.",
+   "context_docs": [
+    "overview.md",
+    "quotas.md",
+    "quotas.md",
+    "containers.md"
+   ],
+   "evidence_in_context": false,
+   "correct": false,
+   "citation_grounded": false,
+   "abstained": true,
+   "seconds": 17.0
+  },
+  {
+   "id": "q046",
+   "type": "answerable",
+   "difficulty": "medium",
+   "question": "To limit which apps load a particular Dapr component, what do I put in its scopes list - the container app name or something else?",
+   "answer": "The scopes list contains the Dapr application IDs of the container apps that should load the component at runtime. It does not include the container app names; instead, it specifies the unique identifier for each Dapr-enabled container app.",
+   "context_docs": [
+    "dapr-components.md",
+    "dapr-components.md",
+    "dapr-overview.md",
+    "dapr-overview.md"
+   ],
+   "evidence_in_context": true,
+   "correct": true,
+   "citation_grounded": false,
+   "abstained": false,
+   "seconds": 25.7
+  },
+  {
+   "id": "q047",
+   "type": "answerable",
+   "difficulty": "easy",
+   "question": "Which port numbers does the Dapr sidecar expose for HTTP and gRPC?",
+   "answer": "The Dapr sidecar exposes HTTP traffic on port 3500 and gRPC traffic on port 50001.",
+   "context_docs": [
+    "connect-apps.md",
+    "enable-dapr.md",
+    "dapr-authentication-token.md",
+    "dapr-overview.md"
+   ],
+   "evidence_in_context": true,
+   "correct": true,
+   "citation_grounded": false,
+   "abstained": false,
+   "seconds": 28.9
+  },
+  {
+   "id": "q048",
+   "type": "answerable",
+   "difficulty": "medium",
+   "question": "What do I need to set up on the networking side if I want to mount an Azure Files share over NFS rather than SMB?",
+   "answer": "If you want to mount an Azure Files share over NFS instead of SMB, you need to configure your environment to have a custom Virtual Network (VNet) and ensure that the storage account allows access from that VNet. Specifically, the storage account should be configured to enable secure transfers for NFS files. Additionally, you'll need to open specific ports (445 and 2049) in the network security group associated with the VNet subnet where your container app resides.",
+   "context_docs": [
+    "storage-mounts.md",
+    "storage-mounts-azure-files.md",
+    "storage-mounts.md",
+    "storage-mounts.md"
+   ],
+   "evidence_in_context": true,
+   "correct": false,
+   "citation_grounded": false,
+   "abstained": false,
+   "seconds": 57.8
+  }
+ ],
+ "prompt": "v1"
+}

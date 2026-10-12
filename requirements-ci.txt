@@ -1,0 +1,7 @@
+# Light set used by CI: no torch, no model downloads
+fastapi>=0.110
+httpx>=0.27
+numpy>=1.26
+rank-bm25>=0.2.2
+pytest
+ruff

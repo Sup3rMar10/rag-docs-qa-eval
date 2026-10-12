@@ -1,0 +1,19 @@
+{
+  "_note": "Manual review of generated answers against the evidence, by a single reviewer (the AI assistant that built this project, not an independent human). It exists because strict substring scoring has false negatives. The scorer's raw numbers are always reported alongside the audited ones.",
+  "rag-dense-256 (prompt v1)": {
+    "false_negatives": {
+      "q043": "Answer says the ingress idle timeout is 4 minutes; the answer key only listed '240' (seconds). Same value.",
+      "q048": "Answer correctly says a custom VNet is needed and the storage account must allow access; the key 'custom VNet' did not match the spelling 'custom Virtual Network (VNet)'.",
+      "q032": "Question has two valid fixes (deploy a new revision OR restart); the answer gave one of them and the key required both words."
+    },
+    "false_positives": {}
+  },
+  "rag-dense-256 (prompt v2)": {
+    "false_negatives": {
+      "q043": "Answer says the HTTP call can stay open up to 4 minutes at the ingress; the key only listed '240' (seconds). Same value.",
+      "q048": "Answer correctly says a custom VNet is needed and the storage account must allow access; the key 'custom VNet' did not match 'custom Virtual Network (VNet)'.",
+      "q032": "Question has two valid fixes (deploy a new revision OR restart); the answer gave one of them and the key required both words."
+    },
+    "false_positives": {}
+  }
+}

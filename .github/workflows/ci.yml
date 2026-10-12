@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Lint + tests + eval-set validation (no GPU, no model downloads)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements-ci.txt
+      - run: ruff check .
+      - name: Fetch the pinned docs corpus
+        run: python scripts/fetch_corpus.py --commit "$(sed -n 's/^commit: //p' data/corpus_commit.txt)"
+      - run: pytest -q
+      - name: Every evaluation question is grounded in the corpus
+        run: python -m src.evalset data/eval_questions.jsonl data/corpus
