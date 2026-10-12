@@ -20,7 +20,9 @@ jobs:
       - run: pip install -r requirements-ci.txt
       - run: ruff check .
       - name: Fetch the pinned docs corpus
-        run: python scripts/fetch_corpus.py --commit "$(sed -n 's/^commit: //p' data/corpus_commit.txt)"
+        run: |
+          COMMIT=$(cut -d' ' -f2 data/corpus_commit.txt)
+          python scripts/fetch_corpus.py --commit "$COMMIT"
       - run: pytest -q
       - name: Every evaluation question is grounded in the corpus
         run: python -m src.evalset data/eval_questions.jsonl data/corpus
